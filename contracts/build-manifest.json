@@ -1,0 +1,28 @@
+{
+  "network": "localnet",
+  "anchor": "1.0.2",
+  "agave": "4.0.0",
+  "platform_tools": "1.57",
+  "sbf_arch": "v3",
+  "production_certified": false,
+  "programs": [
+    {
+      "name": "registry",
+      "address": "5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz",
+      "size": 480736,
+      "sha256": "40bcd3266ab7ecb2359debcddf866c0945ce58da41e4ac65429a4160398eb040"
+    },
+    {
+      "name": "escrow",
+      "address": "8zEaBFNNVDx9U4Cr111xfZjUmX7JMBapJhd6yT4XwtuZ",
+      "size": 216296,
+      "sha256": "552c800627fc497918bf5381a25b60649156fc039b3219597fe6ba042a7e1582"
+    },
+    {
+      "name": "reserve",
+      "address": "7kaGXYpxPuCoh5o2AhxRoU8F13UUkHjfxVZUTYsKG88Y",
+      "size": 207248,
+      "sha256": "6e95b881f4d7dbe9e261c95073e6942b843156e5b55452ae3eb201f4d0b0ae56"
+    }
+  ]
+}

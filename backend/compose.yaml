@@ -1,0 +1,97 @@
+name: depthguard
+services:
+  postgres:
+    image: postgres:17.9-bookworm
+    environment:
+      POSTGRES_USER: depthguard
+      POSTGRES_DB: depthguard
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD:?Set APP_DB_PASSWORD to 64 random hex characters}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-55439}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./ops/postgres-init.sh:/docker-entrypoint-initdb.d/10-depthguard-role.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U depthguard -d depthguard"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+    shm_size: 256mb
+    mem_limit: 1g
+    cpus: 1.0
+    security_opt: ["no-new-privileges:true"]
+  migrate:
+    image: depthguard-backend:${BACKEND_IMAGE_TAG:-local}
+    build: {context: .., dockerfile: backend/Dockerfile}
+    command: ["depthguard-api", "migrate"]
+    environment: &app_environment
+      DATABASE_URL: postgres://depthguard:${POSTGRES_PASSWORD}@postgres:5432/depthguard
+      BIND_ADDRESS: 0.0.0.0:8800
+      APP_ORIGIN: ${APP_ORIGIN:-http://127.0.0.1:8800}
+      SOLANA_CLUSTER: ${SOLANA_CLUSTER:-localnet}
+      SOLANA_RPC_URLS: ${SOLANA_RPC_URLS:-http://host.docker.internal:8899}
+      ENABLE_CHAIN_WRITES: ${ENABLE_CHAIN_WRITES:-false}
+      ENABLE_CONTRACTS: ${ENABLE_CONTRACTS:-false}
+      KEY_ENCRYPTION_KEY: ${KEY_ENCRYPTION_KEY:-}
+      PLATFORM_FEE_WALLET: ${PLATFORM_FEE_WALLET:-}
+      DAMM_MIGRATION_CONFIG: ${DAMM_MIGRATION_CONFIG:-}
+      ARTIFACTS_DIR: /var/lib/depthguard/artifacts
+      RUST_LOG: info,tower_http=warn
+    depends_on:
+      postgres: {condition: service_healthy}
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    profiles: ["app"]
+  api:
+    image: depthguard-backend:${BACKEND_IMAGE_TAG:-local}
+    build: {context: .., dockerfile: backend/Dockerfile}
+    command: ["depthguard-api"]
+    environment:
+      <<: *app_environment
+      DATABASE_URL: postgres://depthguard_app:${APP_DB_PASSWORD}@postgres:5432/depthguard
+    ports: ["127.0.0.1:${API_PORT:-8800}:8800"]
+    volumes: ["${ARTIFACTS_HOST_DIR:-./artifacts}:/var/lib/depthguard/artifacts:ro"]
+    depends_on:
+      postgres: {condition: service_healthy}
+      migrate: {condition: service_completed_successfully}
+    restart: unless-stopped
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m"]
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 512m
+    cpus: 1.0
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    profiles: ["app"]
+  worker:
+    image: depthguard-backend:${BACKEND_IMAGE_TAG:-local}
+    build: {context: .., dockerfile: backend/Dockerfile}
+    command: ["depthguard-worker"]
+    environment:
+      <<: *app_environment
+      DATABASE_URL: postgres://depthguard_app:${APP_DB_PASSWORD}@postgres:5432/depthguard
+    volumes: ["${ARTIFACTS_HOST_DIR:-./artifacts}:/var/lib/depthguard/artifacts"]
+    depends_on:
+      postgres: {condition: service_healthy}
+      migrate: {condition: service_completed_successfully}
+    restart: unless-stopped
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m"]
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 2g
+    cpus: 2.0
+    stop_grace_period: 45s
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    profiles: ["app"]
+  prometheus:
+    image: prom/prometheus:v3.7.0
+    volumes: ["./ops/prometheus.yml:/etc/prometheus/prometheus.yml:ro", "./ops/alerts.yml:/etc/prometheus/alerts.yml:ro", "prometheus_data:/prometheus"]
+    ports: ["127.0.0.1:19099:9090"]
+    restart: unless-stopped
+    mem_limit: 256m
+    profiles: ["monitoring"]
+volumes:
+  postgres_data:
+  prometheus_data:

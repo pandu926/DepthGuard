@@ -1,0 +1,12 @@
+[Unit]
+Description=DepthGuard backup every five minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+AccuracySec=1s
+Persistent=true
+Unit=depthguard-backup.service
+
+[Install]
+WantedBy=timers.target

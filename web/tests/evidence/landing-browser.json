@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-03T15:16:06.395Z",
+  "origin": "https://depthguard.rbexp.com",
+  "public_https_verified": true,
+  "desktop": 1440,
+  "mobile": [
+    390,
+    320
+  ],
+  "mechanisms": 4,
+  "no_backend_requests_on_landing": true,
+  "autoplay_pause_and_reduced_motion": true,
+  "app_and_docs_navigation": true,
+  "cta_routes_and_reload": [
+    "/create/identity",
+    "/models",
+    "/studio",
+    "/research"
+  ],
+  "errors": [],
+  "failures": []
+}

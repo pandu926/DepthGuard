@@ -1,0 +1,100 @@
+{
+  "tested_at_utc": "2026-10-02T23:11:03.854565+00:00",
+  "scope": "local_backend_acceptance",
+  "production_certified": false,
+  "mainnet_transactions_sent": 0,
+  "application_tests": 14,
+  "native_tests": 3,
+  "native_sdk_parity_quotes": 70,
+  "signed_rust_litesvm_swaps": 70,
+  "http_lifecycle_compounding_bps": [
+    0,
+    5000,
+    10000
+  ],
+  "http_lifecycle_checks": [
+    "origin_bound_wallet_auth",
+    "immutable_model_publication",
+    "encrypted_creation_signers",
+    "DBC_swaps",
+    "DFS_fee_sweep_and_claim",
+    "finalized_DAMM_migration_verification",
+    "post_migration_swaps_and_fees",
+    "funding_source_classification",
+    "durable_research_export",
+    "consumed_signer_key_erasure",
+    "receipt_deduplication"
+  ],
+  "fee_distribution_proof": {
+    "claimed_atomic": "2000000",
+    "recipient_atomic": [
+      "1600000",
+      "200000",
+      "200000"
+    ],
+    "replay_rejected": true
+  },
+  "runtime": {
+    "docker_build": "passed",
+    "api_readiness": "passed",
+    "worker_heartbeat": "present",
+    "migrations": 9,
+    "database_runtime_role_superuser": false,
+    "private_api_port": 8800,
+    "existing_demo_http_status": 200,
+    "container_helpers": {
+      "native": "passed",
+      "sbf": "passed"
+    }
+  },
+  "read_smoke": {
+    "status": "passed",
+    "scope": "short_local_read_only_smoke",
+    "production_capacity_certified": false,
+    "requests": 320,
+    "concurrency": 16,
+    "elapsed_seconds": 1.446,
+    "statuses": {
+      "200": 320
+    },
+    "p50_ms": 36.959,
+    "p95_ms": 172.224,
+    "p99_ms": 645.166
+  },
+  "restore_rehearsal": {
+    "status": "passed",
+    "scope": "local_encrypted_repository_rehearsal",
+    "off_host_certified": false,
+    "elapsed_seconds": 6.145,
+    "checks": [
+      "encrypted_repository_integrity",
+      "database_dump_hash",
+      "artifact_hashes",
+      "fee_integer_roundtrip",
+      "account_signer_key_recovery"
+    ]
+  },
+  "validation": {
+    "rustfmt": "passed",
+    "clippy_warnings_denied": "passed",
+    "typescript_check": "passed",
+    "lockfile_security_vulnerabilities": 0,
+    "unmaintained_upstream_dependencies": [
+      "bincode",
+      "derivative",
+      "paste"
+    ]
+  },
+  "remaining_release_gates": [
+    "target_network_acceptance",
+    "consumer_wallet_UI_integration",
+    "independent_security_review",
+    "edge_rate_limits_and_sustained_load",
+    "actual_off_host_recovery_acceptance",
+    "RPC_reliability_and_operator_promotion"
+  ],
+  "separate_contract_scope": [
+    "funding_escrow",
+    "reserve_backed_burn_redemption"
+  ]
+}

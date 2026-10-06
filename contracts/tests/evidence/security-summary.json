@@ -1,0 +1,16 @@
+{
+  "scope": "first_party_local_adversarial_acceptance",
+  "production_certified": false,
+  "public_transactions_sent": 0,
+  "lifecycle_cases": 12,
+  "named_adversarial_checks": 78,
+  "compiled_sbf_receipts": 206,
+  "maximum_wire_bytes": 1139,
+  "maximum_compute_units": 164857,
+  "http_acceptance": "passed",
+  "genuine_validator_receipts": 12,
+  "deployed_bytecode_verified": 3,
+  "mainnet_config_gates": "rejected_before_database_or_rpc_access",
+  "dependency_audit": "dependency-audit.json",
+  "artifact_manifest": "../../build-manifest.json"
+}

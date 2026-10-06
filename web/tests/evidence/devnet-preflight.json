@@ -1,0 +1,48 @@
+{
+  "network": "devnet",
+  "read_only": true,
+  "writes_performed": false,
+  "release_accepted": true,
+  "recorded_at": "2026-10-03T13:40:40.094Z",
+  "programs": [
+    {
+      "name": "dbc",
+      "address": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+      "deployed": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111"
+    },
+    {
+      "name": "damm_v2",
+      "address": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+      "deployed": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111"
+    },
+    {
+      "name": "dfs",
+      "address": "dfsdo2UqvwfN8DuUVrMRNfQe11VaiNoKcMqLHVvDPzh",
+      "deployed": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111"
+    },
+    {
+      "name": "registry",
+      "address": "5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz",
+      "deployed": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111"
+    },
+    {
+      "name": "escrow",
+      "address": "8zEaBFNNVDx9U4Cr111xfZjUmX7JMBapJhd6yT4XwtuZ",
+      "deployed": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111"
+    },
+    {
+      "name": "reserve",
+      "address": "7kaGXYpxPuCoh5o2AhxRoU8F13UUkHjfxVZUTYsKG88Y",
+      "deployed": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111"
+    }
+  ],
+  "blockers": [],
+  "acceptance_scope": "devnet_only",
+  "production_certified": false
+}

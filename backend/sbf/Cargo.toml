@@ -1,0 +1,18 @@
+[workspace]
+[package]
+name = "depthguard-sbf"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+litesvm = "=0.17.0"
+serde_json = "1"
+anyhow = "1"
+base64 = "0.22"
+sha2 = "0.10"
+hex = "0.4"
+solana-account = "4"
+solana-address = "2"
+solana-transaction = { version = "=4.3.0", features = ["serde"] }
+solana-clock = "3"
+bincode = "1"

@@ -1,0 +1,11 @@
+{
+  "public_http_preview": true,
+  "secure_context": false,
+  "routes": 6,
+  "draft_reload": true,
+  "wallet_keyboard_escape": true,
+  "mobile_overflow": false,
+  "browser_errors": [],
+  "recorded_at": "2026-10-03T11:05:43.810Z",
+  "production_certified": false
+}

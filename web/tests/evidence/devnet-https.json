@@ -1,0 +1,25 @@
+{
+  "domain": "depthguard.rbexp.com",
+  "network": "devnet",
+  "origin_https_accepted": true,
+  "dns_override": "127.0.0.1",
+  "tls_certificate": "self_signed_origin_explicitly_trusted_for_test",
+  "browser_certificate_scope": "single_origin_certificate_spki_pin",
+  "cloudflare_edge_verified": false,
+  "dns_pending_owner": true,
+  "authentication_verified": true,
+  "secure_httponly_cookie": true,
+  "wrong_origin_rejected": true,
+  "browser_secure_context": true,
+  "browser_errors": [],
+  "responsive_overflow": false,
+  "routes_verified": [
+    "/",
+    "/studio",
+    "/research",
+    "/models",
+    "/tokens/BZZZmD5gnidk1N7su7wrc7W59Kwjd2sVx1w8nRuuFaHq",
+    "/tokens/Gtx8bioTkQFSTsFfpqtDC8Xjc7oWTATVVYffTwRupU2n/funding"
+  ],
+  "recorded_at": "2026-10-03T13:53:23.634Z"
+}

@@ -1,0 +1,71 @@
+name: depthguard-contracts
+services:
+  validator:
+    image: depthguard-backend:${BACKEND_IMAGE_TAG:-local}
+    container_name: depthguard-validator
+    user: "0:0"
+    environment: { RUST_LOG: warn }
+    command:
+      - /opt/agave/solana-test-validator
+      - --bind-address
+      - 127.0.0.1
+      - --rpc-port
+      - "18999"
+      - --faucet-port
+      - "18900"
+      - --dynamic-port-range
+      - 19011-19060
+      - --ledger
+      - /ledger
+      - --limit-ledger-size
+      - "${LOCAL_LEDGER_SHREDS:-100000}"
+      - --quiet
+      - --bpf-program
+      - dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN
+      - /fixtures/dynamic_bonding_curve.so
+      - --bpf-program
+      - cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG
+      - /fixtures/cp_amm.so
+      - --bpf-program
+      - metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s
+      - /fixtures/metaplex.so
+      - --bpf-program
+      - dfsdo2UqvwfN8DuUVrMRNfQe11VaiNoKcMqLHVvDPzh
+      - /fixtures/dynamic_fee_sharing.so
+      - --upgradeable-program
+      - 5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz
+      - /programs/depthguard_registry.so
+      - ${LOCAL_OPERATOR_PUBKEY:?Set the public local operator address}
+      - --upgradeable-program
+      - 8zEaBFNNVDx9U4Cr111xfZjUmX7JMBapJhd6yT4XwtuZ
+      - /programs/depthguard_escrow.so
+      - ${LOCAL_OPERATOR_PUBKEY:?Set the public local operator address}
+      - --upgradeable-program
+      - 7kaGXYpxPuCoh5o2AhxRoU8F13UUkHjfxVZUTYsKG88Y
+      - /programs/depthguard_reserve.so
+      - ${LOCAL_OPERATOR_PUBKEY:?Set the public local operator address}
+    ports: ["127.0.0.1:18999:18999", "127.0.0.1:19000:19000"]
+    volumes:
+      - ../.local/agave-4.0.0/solana-release/bin:/opt/agave:ro
+      - ./target/deploy:/programs:ro
+      - ../proof/fixtures:/fixtures:ro
+      - ../.local/contracts/validator-docker-ledger:/ledger
+    networks: [depthguard]
+    read_only: true
+    tmpfs: ["/tmp:rw,nosuid,size=256m"]
+    cap_drop: ["ALL"]
+    security_opt:
+      ["no-new-privileges:true", "seccomp=./ops/validator-seccomp.json"]
+    ulimits:
+      nofile: { soft: 1000000, hard: 1000000 }
+    mem_limit: 8g
+    cpus: 4.0
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+    restart: unless-stopped
+    stop_grace_period: 30s
+networks:
+  depthguard:
+    external: true
+    name: depthguard_default

@@ -1,0 +1,23 @@
+[package]
+name = "economy-core"
+version = "0.1.0"
+edition = "2021"
+[dependencies]
+anchor-lang.workspace = true
+sha2.workspace = true
+anchor-attribute-access-control.workspace = true
+anchor-attribute-account.workspace = true
+anchor-attribute-constant.workspace = true
+anchor-attribute-error.workspace = true
+anchor-attribute-event.workspace = true
+anchor-attribute-program.workspace = true
+anchor-derive-accounts.workspace = true
+anchor-derive-serde.workspace = true
+anchor-derive-space.workspace = true
+[features]
+idl-build = ["anchor-lang/idl-build"]
+[dev-dependencies]
+proptest = "1"
+
+[build-dependencies]
+anchor-syn.workspace = true

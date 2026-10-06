@@ -1,0 +1,47 @@
+[workspace]
+members = ["crates/*"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.97"
+license = "MIT"
+
+[workspace.dependencies]
+depthguard-domain = { path = "crates/domain" }
+depthguard-application = { path = "crates/application" }
+depthguard-infrastructure = { path = "crates/infrastructure" }
+axum = { version = "=0.8.9", features = ["macros"] }
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "=0.9.0", default-features = false, features = ["runtime-tokio", "tls-rustls-ring", "postgres", "uuid", "chrono", "json", "migrate", "macros"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+anyhow = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+sha2 = "0.10"
+hex = "0.4"
+bs58 = "0.5"
+base64 = "0.22"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+rand = "0.8"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+tower = { version = "0.5", features = ["util", "limit"] }
+tower-http = { version = "0.6", features = ["cors", "trace", "timeout", "request-id", "set-header"] }
+num-bigint = { version = "0.4", features = ["serde"] }
+num-traits = "0.2"
+futures = "0.3"
+subtle = "2"
+schemars = { version = "=1.2.2", features = ["uuid1"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

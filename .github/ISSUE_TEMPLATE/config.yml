@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Product handbook
+    url: https://depthguard.rbexp.com/docs
+    about: Read product concepts and usage guidance.
+  - name: Security policy
+    url: https://github.com/pandu926/DepthGuard/blob/main/SECURITY.md
+    about: Read the private vulnerability reporting instructions.

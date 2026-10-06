@@ -1,0 +1,32 @@
+{
+  "network": "localnet",
+  "real_browser": true,
+  "real_rust_api": true,
+  "real_postgres": true,
+  "real_validator": true,
+  "graduation_verified": true,
+  "mechanisms": [
+    {
+      "mechanism": "backed",
+      "launch": "EUKcCLANi9mhjzewXoJRGfdPfNiF3h8PfvCSS3WGZbgM",
+      "phase": 4,
+      "standalone_model_registered": true,
+      "rights_browser_verified": true
+    },
+    {
+      "mechanism": "funding",
+      "launch": "FfzM8ZKggyg6QFrMihRQdT7J94ZnGreWWwQ2RuGiVCyu",
+      "phase": 4,
+      "standalone_model_registered": true,
+      "rights_browser_verified": true
+    }
+  ],
+  "launch_id": "38634db6-f06c-4f51-bb6a-80fb5f91f1b6",
+  "launch_address": "B85QWJ2YgLA4qXoxfMdVPpb5TH96T6yheuH682YGP1qs",
+  "finalized_transactions": 24,
+  "browser_errors": [],
+  "responsive_overflow": false,
+  "recorded_at": "2026-10-03T10:58:31.921Z",
+  "production_certified": false,
+  "transaction_count_scope": "finalized rows observed on the first activity page; not a total"
+}

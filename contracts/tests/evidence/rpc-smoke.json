@@ -1,0 +1,148 @@
+{
+  "build_manifest": {
+    "network": "localnet",
+    "anchor": "1.0.2",
+    "agave": "4.0.0",
+    "platform_tools": "1.57",
+    "sbf_arch": "v3",
+    "production_certified": false,
+    "programs": [
+      {
+        "name": "registry",
+        "address": "5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz",
+        "size": 480736,
+        "sha256": "40bcd3266ab7ecb2359debcddf866c0945ce58da41e4ac65429a4160398eb040"
+      },
+      {
+        "name": "escrow",
+        "address": "8zEaBFNNVDx9U4Cr111xfZjUmX7JMBapJhd6yT4XwtuZ",
+        "size": 216296,
+        "sha256": "552c800627fc497918bf5381a25b60649156fc039b3219597fe6ba042a7e1582"
+      },
+      {
+        "name": "reserve",
+        "address": "7kaGXYpxPuCoh5o2AhxRoU8F13UUkHjfxVZUTYsKG88Y",
+        "size": 207248,
+        "sha256": "6e95b881f4d7dbe9e261c95073e6942b843156e5b55452ae3eb201f4d0b0ae56"
+      }
+    ]
+  },
+  "deployed_programs": [
+    {
+      "name": "registry",
+      "address": "5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz",
+      "size": 480736,
+      "sha256": "40bcd3266ab7ecb2359debcddf866c0945ce58da41e4ac65429a4160398eb040",
+      "bytecode_verified": true,
+      "upgrade_authority_present": true
+    },
+    {
+      "name": "escrow",
+      "address": "8zEaBFNNVDx9U4Cr111xfZjUmX7JMBapJhd6yT4XwtuZ",
+      "size": 216296,
+      "sha256": "552c800627fc497918bf5381a25b60649156fc039b3219597fe6ba042a7e1582",
+      "bytecode_verified": true,
+      "upgrade_authority_present": true
+    },
+    {
+      "name": "reserve",
+      "address": "7kaGXYpxPuCoh5o2AhxRoU8F13UUkHjfxVZUTYsKG88Y",
+      "size": 207248,
+      "sha256": "6e95b881f4d7dbe9e261c95073e6942b843156e5b55452ae3eb201f4d0b0ae56",
+      "bytecode_verified": true,
+      "upgrade_authority_present": true
+    }
+  ],
+  "status": "passed",
+  "runtime": "Agave 4.0.0",
+  "endpoint": "http://127.0.0.1:18999",
+  "genesis_hash": "4WKoWAgAeRdBs4yp8rGD6M8LtnbbpH9AE2gu2y62Ev6B",
+  "public_transactions_sent": 0,
+  "production_certified": false,
+  "checks": [
+    "real_upgradeable_loader_authority",
+    "native_DFS",
+    "staged_registry_model",
+    "factory_DBC_config_and_pool",
+    "native_DAMM_migration",
+    "verified_capital_activation",
+    "atomic_reserve_redemption"
+  ],
+  "launch": "87R4NEcQDPXC552GXtfdUyYvjZBugrpfZX2JasaLabFg",
+  "vault": "ELpLEYL7wD4u2HKbshc1yAsejsfgTJokR6FePoQMshq5",
+  "capital_funded": "250000000",
+  "receipts": [
+    {
+      "label": "native-dfs",
+      "signature": "42haTvnjJwkxLyj8hXdvKKpy2FSNZZefRqpUJbStgMSUc3TKWj7ejRiVt4Lakm3cPaHWwvynhUUStrT6ve7MhWqK",
+      "slot": 1238,
+      "compute_units": 24684
+    },
+    {
+      "label": "initialize_launch",
+      "signature": "3VsPjZ1LKdRmYUbM1CRreLyp58oHStuD6ypKSbGovmy3DVUcVrdio4Wadv2A7eTafwvZbcxPswx3DJWvGPGh2Nqq",
+      "slot": 1239,
+      "compute_units": 16728
+    },
+    {
+      "label": "create_config",
+      "signature": "5zH3b6h17MLYBSH9aeU3b4utfXcDsmGx8L6PSKUUAGMeBcfDKH92iwgxPSH8KDXvgpLReTnPra5pZhj3sGWUY2eS",
+      "slot": 1240,
+      "compute_units": 60376
+    },
+    {
+      "label": "fund-native-flash-rent-authority",
+      "signature": "5Do5hJwMTCfBYYPjqwjr129henwVYCcKfyUMuH87NRHdSujdo3PgA2H2MZrf9vFXFe9H4peRwrtiX6aY9BwJUy88",
+      "slot": 1241,
+      "compute_units": 150
+    },
+    {
+      "label": "create_pool",
+      "signature": "4qykNLQnJdpmBYhBpYkamN84pwWyhRPPXzfP235H2YLQP5G2t4KNk89NFMCUQbPMWectAg3btPpZaTe8AkaPntCW",
+      "slot": 1242,
+      "compute_units": 119763
+    },
+    {
+      "label": "initialize_module",
+      "signature": "4tBkqP3kLZizoKGo4YoyJ2tkk3TJD3nVHaF8eDUsqqLrCoosrqL5EbYa9NtwSy3xPRdHf6Vp7g32qZ6sBAiUzXV4",
+      "slot": 1243,
+      "compute_units": 48602
+    },
+    {
+      "label": "fund-local-trader",
+      "signature": "9C7L1sgCS6EZoiQ46TdLPP478hQRWhaTuZeRpbYmTqrJFjHYfdzF3WA3XNmX1HLMHfB7bUxFNLH9x39xxYD16qQ",
+      "slot": 1244,
+      "compute_units": 6190
+    },
+    {
+      "label": "graduate",
+      "signature": "5LxvMMB1Ds5Wtpfe82FAgp3vvkbnXE1SsqxqHhbSAArxfkdp5SmEqUkSrb74vawTTxZkeboD8pXtG2S7AnNcUrJ1",
+      "slot": 1245,
+      "compute_units": 51850
+    },
+    {
+      "label": "native-migration",
+      "signature": "26KvrM13xZzWkmLDs3ZTgWigodqahWiQh2gNdiee3VdmtD29x8G5YsaPteZZx3cR3ZNdgxHvc9sm9dgRJVSUT8Ez",
+      "slot": 1246,
+      "compute_units": 138597
+    },
+    {
+      "label": "verify_migration",
+      "signature": "3k85ouaXXtXeaBnNZfw4faeKmdNz61LjAigvd3Kb1dTNeMusyfzLpFQQu14cfPV17fT8xtVm8EPcqkpkH7NUvwuK",
+      "slot": 1247,
+      "compute_units": 16527
+    },
+    {
+      "label": "fund_and_activate",
+      "signature": "5ubZvy1vLTKgsMWfWVmCp3rfjYuF7prt5jvxG4mgiaXbry9UXkG6Z5vRaFAUj4sLwPkjtc6GJWVqWvB7rSNoHNuF",
+      "slot": 1248,
+      "compute_units": 49420
+    },
+    {
+      "label": "reserve_redeem",
+      "signature": "5JkyJhMjSzSwhRzZoGE7NSd3kEy7jprf1kxWecA77ykdyBYzaG4ozuDiY3JJTUpoNusYGhGYUpKa4pnjHqyrYEKq",
+      "slot": 1249,
+      "compute_units": 19863
+    }
+  ]
+}

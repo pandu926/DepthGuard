@@ -1,0 +1,10 @@
+{
+  "source": "https://raw.githubusercontent.com/moby/profiles/2ceae35d351c156cb5a8efc0fdc4a08cf94569d8/seccomp/default.json",
+  "source_sha256": "6416b47770785a41ac59073cdc77d9fe98517df2799dc83ef207e622de3053f6",
+  "added_syscalls": [
+    "io_uring_enter",
+    "io_uring_register",
+    "io_uring_setup"
+  ],
+  "scope": "trusted_local_Agave_validator_only"
+}

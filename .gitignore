@@ -1,0 +1,31 @@
+# Dependencies and build products
+node_modules/
+**/dist/
+**/target/
+coverage/
+playwright-report/
+test-results/
+
+# Private configuration and runtime state
+.local/
+.env
+.env.*
+**/.env
+**/.env.*
+!**/.env.example
+*.log
+**/*-keypair.json
+*.pem
+*.key
+
+# Downloaded programs and generated local proof output
+proof/fixtures/
+proof/results/
+backend/artifacts/
+contracts/test-ledger/
+
+# Local tooling
+**/__pycache__/
+.DS_Store
+.idea/
+.vscode/

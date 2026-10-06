@@ -1,0 +1,39 @@
+[workspace]
+
+[package]
+name = "depthguard-native"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+anchor-lang = "=1.0.2"
+serde_json = "1"
+base64 = "0.22"
+dynamic-bonding-curve-sdk = { git = "https://github.com/MeteoraAg/dynamic-bonding-curve.git", rev = "f552f20aa3c1c7631427c3827aeea7c58b902813" }
+dynamic-bonding-curve = { git = "https://github.com/MeteoraAg/dynamic-bonding-curve.git", rev = "f552f20aa3c1c7631427c3827aeea7c58b902813", features = ["no-entrypoint"] }
+damm-sdk = { package = "rust-sdk", git = "https://github.com/MeteoraAg/damm-v2.git", rev = "a85c926607433f23f0ea60f4ca7b1ae92f4156cb" }
+cp-amm = { git = "https://github.com/MeteoraAg/damm-v2.git", rev = "a85c926607433f23f0ea60f4ca7b1ae92f4156cb", features = ["no-entrypoint", "no-custom-entrypoint"] }
+
+anchor-attribute-access-control = "=1.0.2"
+anchor-attribute-account = "=1.0.2"
+anchor-attribute-constant = "=1.0.2"
+anchor-attribute-error = "=1.0.2"
+anchor-attribute-event = "=1.0.2"
+anchor-attribute-program = "=1.0.2"
+anchor-derive-accounts = "=1.0.2"
+anchor-derive-serde = "=1.0.2"
+anchor-derive-space = "=1.0.2"
+anchor-syn = "=1.0.2"
+dynamic-fee-sharing = { git = "https://github.com/MeteoraAg/dynamic-fee-sharing.git", rev = "3e327c1ab085246612d28da21e1a78c7008119fe", features = ["no-entrypoint"] }
+solana-message = { version = "=3.1.0", features = ["bincode"] }
+solana-hash = "3"
+bytemuck = "1"
+solana-instruction = "3"
+
+depthguard-domain = { path = "../crates/domain" }
+
+economy-core = { path = "../../contracts/crates/economy-core" }
+depthguard-registry = { path = "../../contracts/programs/registry", features = ["cpi"] }
+depthguard-escrow = { path = "../../contracts/programs/escrow", features = ["cpi"] }
+depthguard-reserve = { path = "../../contracts/programs/reserve", features = ["cpi"] }

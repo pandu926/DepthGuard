@@ -1,0 +1,175 @@
+{
+  "origin": "https://depthguard.rbexp.com",
+  "public_https_verified": true,
+  "certificate_bypass": false,
+  "articles": [
+    {
+      "path": "/docs",
+      "title": "Economies by design.",
+      "equations": 0
+    },
+    {
+      "path": "/docs/quickstart",
+      "title": "Your first session",
+      "equations": 0
+    },
+    {
+      "path": "/docs/wallet-and-network",
+      "title": "Wallet & network",
+      "equations": 0
+    },
+    {
+      "path": "/docs/create-a-token",
+      "title": "Create a token",
+      "equations": 0
+    },
+    {
+      "path": "/docs/economy-studio",
+      "title": "Economy Studio",
+      "equations": 0
+    },
+    {
+      "path": "/docs/parameters",
+      "title": "Parameter guide",
+      "equations": 0
+    },
+    {
+      "path": "/docs/publish-and-launch",
+      "title": "Publish and launch",
+      "equations": 0
+    },
+    {
+      "path": "/docs/community-launch",
+      "title": "Community launches",
+      "equations": 0
+    },
+    {
+      "path": "/docs/milestone-funding",
+      "title": "Milestone funding",
+      "equations": 0
+    },
+    {
+      "path": "/docs/reserve-economy",
+      "title": "Reserve economies",
+      "equations": 0
+    },
+    {
+      "path": "/docs/asset-markets",
+      "title": "Asset-quoted markets",
+      "equations": 0
+    },
+    {
+      "path": "/docs/simulations",
+      "title": "Simulation Lab",
+      "equations": 0
+    },
+    {
+      "path": "/docs/stress-testing",
+      "title": "Stress testing",
+      "equations": 0
+    },
+    {
+      "path": "/docs/reading-results",
+      "title": "Reading results",
+      "equations": 0
+    },
+    {
+      "path": "/docs/mathematical-framework",
+      "title": "An economy as a state system",
+      "equations": 3
+    },
+    {
+      "path": "/docs/price-discovery",
+      "title": "Price discovery & liquidity",
+      "equations": 6
+    },
+    {
+      "path": "/docs/capital-conservation",
+      "title": "Capital conservation",
+      "equations": 4
+    },
+    {
+      "path": "/docs/redemption-math",
+      "title": "Redemption & outstanding supply",
+      "equations": 4
+    },
+    {
+      "path": "/docs/fee-mathematics",
+      "title": "Fee flows & distributions",
+      "equations": 5
+    },
+    {
+      "path": "/docs/scenario-analysis",
+      "title": "Scenario analysis & sensitivity",
+      "equations": 4
+    },
+    {
+      "path": "/docs/swaps",
+      "title": "Buying and selling",
+      "equations": 0
+    },
+    {
+      "path": "/docs/graduation",
+      "title": "Graduation",
+      "equations": 0
+    },
+    {
+      "path": "/docs/holder-rights",
+      "title": "Holder rights",
+      "equations": 0
+    },
+    {
+      "path": "/docs/reuse-models",
+      "title": "Use and fork models",
+      "equations": 0
+    },
+    {
+      "path": "/docs/model-authors",
+      "title": "For model authors",
+      "equations": 0
+    },
+    {
+      "path": "/docs/fees-and-earnings",
+      "title": "Fees & earnings",
+      "equations": 0
+    },
+    {
+      "path": "/docs/transactions",
+      "title": "Transaction lifecycle",
+      "equations": 0
+    },
+    {
+      "path": "/docs/security",
+      "title": "Security & trust",
+      "equations": 0
+    },
+    {
+      "path": "/docs/release-status",
+      "title": "Release status",
+      "equations": 0
+    },
+    {
+      "path": "/docs/glossary",
+      "title": "Glossary",
+      "equations": 0
+    },
+    {
+      "path": "/docs/faq",
+      "title": "Frequently asked questions",
+      "equations": 0
+    }
+  ],
+  "mathematics_equations": 26,
+  "search_keyboard_verified": true,
+  "search_escape_verified": true,
+  "interactive_curve_verified": true,
+  "mobile_navigation_verified": true,
+  "faq_verified": true,
+  "unknown_article_verified": true,
+  "responsive_overflow": false,
+  "documentation_api_requests": [],
+  "app_navigation_verified": true,
+  "browser_errors": [],
+  "resource_failures": [],
+  "recorded_at": "2026-10-03T15:13:50.435Z"
+}

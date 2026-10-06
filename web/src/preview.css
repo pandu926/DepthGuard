@@ -1,0 +1,328 @@
+.preview-main {
+  padding-top: 18px;
+}
+
+/* Editorial launch preview: an uninterrupted flow, rather than a video player. */
+.preview-page {
+  padding-top: 0;
+}
+.preview-page .preview-layout {
+  grid-template-columns: minmax(0, 1fr) 216px;
+  gap: 36px;
+}
+.preview-page .preview-title {
+  margin: 0 0 22px;
+}
+.preview-page .preview-title > div:first-child {
+  display: block;
+}
+.preview-title h1 {
+  font-size: clamp(58px, 6.1vw, 98px);
+  letter-spacing: -3.2px;
+}
+.preview-title p {
+  font: 18px var(--serif);
+  letter-spacing: 1.1px;
+  margin-top: 14px;
+}
+.preview-page .launch-rail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  padding-left: 28px;
+  min-width: 0;
+}
+.preview-page .launch-rail h2 {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+.preview-page .launch-rail .pair {
+  padding: 20px 0;
+}
+.preview-page .launch-rail dt {
+  font-size: 13px;
+}
+.preview-page .launch-rail dd {
+  font-size: 19px;
+  letter-spacing: -0.4px;
+}
+.preview-page .launch-rail .preview-back {
+  align-self: flex-start;
+  margin-top: 28px;
+}
+.preview-page .launch-rail .preview-launch {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 17px 12px;
+}
+.preview-page .launch-rail > small {
+  font-size: 9px;
+  line-height: 1.7;
+}
+.liquidity-visual > svg {
+  display: block;
+}
+.liquidity-visual svg text {
+  font: 18px var(--serif);
+}
+.flow-field {
+  color: #393b3d;
+}
+.flow-guides {
+  color: #9a9992;
+}
+.migration-gate {
+  stroke: #4a4b4e;
+  fill: var(--paper);
+  fill-opacity: 0.14;
+}
+.flow-highlight {
+  animation: flow-travel 8s linear infinite;
+}
+@keyframes flow-travel {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.flow-timeline {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+.flow-phase {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  min-width: 108px;
+}
+.flow-phase i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.flow-timeline input {
+  appearance: none;
+  height: 1px;
+  flex: 1;
+  min-width: 0;
+  cursor: ew-resize;
+  background: linear-gradient(
+    to right,
+    var(--blue) var(--timeline-progress),
+    var(--line) var(--timeline-progress)
+  );
+}
+.flow-timeline input::-webkit-slider-thumb {
+  appearance: none;
+  background: var(--blue);
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+}
+.flow-timeline input::-moz-range-thumb {
+  border: 0;
+  background: var(--blue);
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+}
+.flow-timeline input:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 6px;
+}
+.flow-timeline small {
+  font-size: 9px;
+}
+.preview-page .comparison {
+  gap: 36px;
+  margin: 46px 0 16px;
+}
+.preview-page .comparison strong {
+  font-size: clamp(54px, 6.4vw, 94px);
+  letter-spacing: -3px;
+}
+.preview-page .comparison small {
+  font: 16px var(--serif);
+}
+.preview-page .comparison > span {
+  font: 36px var(--serif);
+}
+.preview-page .comparison .comparison-coverage {
+  border-left: 1px solid var(--line);
+  padding-left: 30px;
+  margin-left: 5px;
+}
+.preview-page .comparison-coverage small {
+  text-align: left;
+  margin: 0 0 8px;
+}
+.preview-page .comparison-coverage strong {
+  font-size: clamp(30px, 3.1vw, 47px);
+  letter-spacing: -1.5px;
+}
+.preview-page .metric-caption {
+  font: 15px var(--serif);
+}
+.preview-page .preview-tools {
+  margin-top: 32px;
+}
+.preview-page .coverage {
+  font-size: 10px;
+  margin-top: 16px;
+}
+.preview-page .details {
+  margin-top: 24px;
+}
+.live-liquidity-preview {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+  margin-bottom: 18px;
+}
+.live-liquidity-preview summary {
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--blue);
+  list-style: none;
+}
+.live-liquidity-preview .liquidity-visual {
+  margin: 25px 0;
+}
+.live-liquidity-preview p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 600px;
+}
+@media (max-width: 1100px) {
+  .preview-page .preview-layout {
+    grid-template-columns: minmax(0, 1fr) 190px;
+    gap: 25px;
+  }
+  .preview-page .comparison {
+    gap: 22px;
+  }
+  .preview-page .comparison .comparison-coverage {
+    padding-left: 20px;
+  }
+  .preview-title h1 {
+    font-size: clamp(50px, 6.1vw, 82px);
+  }
+}
+@media (max-width: 850px) {
+  .preview-page {
+    padding-top: 6px;
+  }
+  .preview-page .preview-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .preview-title h1 {
+    font-size: clamp(50px, 8.8vw, 80px);
+  }
+  .preview-page .launch-rail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin: 0;
+    padding: 24px 0 0;
+  }
+  .preview-page .launch-rail h2 {
+    grid-column: 1/-1;
+  }
+  .preview-page .launch-rail dl {
+    grid-row: 2/5;
+  }
+  .preview-page .launch-rail .preview-launch {
+    margin-top: 25px;
+    align-self: start;
+  }
+  .preview-page .launch-rail > small {
+    grid-column: 2;
+  }
+  .preview-page .comparison {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .preview-title h1 {
+    font-size: clamp(43px, 11.4vw, 56px);
+    letter-spacing: -1.8px;
+  }
+  .preview-title p {
+    font-size: 15px;
+  }
+  .preview-page .preview-title {
+    margin-bottom: 25px;
+  }
+  .preview-page .comparison {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .preview-page .comparison strong {
+    font-size: 54px;
+    letter-spacing: -2px;
+  }
+  .preview-page .comparison small {
+    font-size: 14px;
+  }
+  .preview-page .comparison .comparison-coverage {
+    flex-basis: 100%;
+    padding: 16px 0 0;
+    margin: 0;
+    border-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .preview-page .comparison-coverage strong {
+    font-size: 30px;
+  }
+  .preview-page .comparison-coverage small {
+    margin: 0;
+  }
+  .flow-timeline {
+    gap: 10px;
+  }
+  .flow-phase {
+    min-width: 98px;
+    font-size: 9px;
+  }
+  .flow-timeline small {
+    font-size: 8px;
+  }
+  .preview-page .launch-rail {
+    display: flex;
+  }
+  .preview-page .launch-rail .preview-launch {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .preview-page .launch-rail {
+    gap: 0;
+  }
+  .preview-page .launch-rail dl {
+    margin: 0;
+  }
+  .preview-page .launch-rail .pair {
+    padding: 14px 0;
+  }
+  .preview-page .launch-rail .preview-back {
+    margin-top: 18px;
+  }
+  .preview-page .launch-rail .preview-launch {
+    margin-top: 20px;
+  }
+  .preview-page .launch-rail > small {
+    margin-top: 12px;
+  }
+}

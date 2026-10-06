@@ -1,0 +1,31 @@
+[package]
+name = "depthguard-registry"
+version = "0.1.0"
+edition = "2021"
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "depthguard_registry"
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build", "economy-core/idl-build", "dynamic-bonding-curve/idl-build", "cp-amm/idl-build", "dynamic-fee-sharing/idl-build", "depthguard-escrow/idl-build", "depthguard-reserve/idl-build"]
+[dependencies]
+anchor-lang.workspace = true
+anchor-spl.workspace = true
+economy-core.workspace = true
+bytemuck.workspace = true
+sha2.workspace = true
+dynamic-bonding-curve.workspace = true
+cp-amm.workspace = true
+dynamic-fee-sharing.workspace = true
+depthguard-escrow = { path = "../escrow", features = ["cpi"] }
+depthguard-reserve = { path = "../reserve", features = ["cpi"] }
+
+[lints]
+workspace = true

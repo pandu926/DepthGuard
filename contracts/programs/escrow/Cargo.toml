@@ -1,0 +1,24 @@
+[package]
+name = "depthguard-escrow"
+version = "0.1.0"
+edition = "2021"
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "depthguard_escrow"
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build", "economy-core/idl-build"]
+[dependencies]
+anchor-lang.workspace = true
+anchor-spl.workspace = true
+economy-core.workspace = true
+
+[lints]
+workspace = true

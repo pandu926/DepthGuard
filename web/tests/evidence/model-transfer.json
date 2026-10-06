@@ -1,0 +1,10 @@
+{
+  "real_browser": true,
+  "real_rust_api": true,
+  "real_postgres": true,
+  "published_export_roundtrip": true,
+  "original_author_preserved": true,
+  "tampered_import_rejected": true,
+  "writes_to_chain": false,
+  "recorded_at": "2026-10-03T12:50:45.202Z"
+}

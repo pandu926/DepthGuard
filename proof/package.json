@@ -1,0 +1,37 @@
+{
+  "name": "depthguard-migration-proof",
+  "version": "1.0.0",
+  "description": "Reproducible DBC to DAMM v2 depth continuity proof using official SDKs and local SBF execution",
+  "scripts": {
+    "fixtures": "node scripts/fetch-fixtures.mjs",
+    "check": "tsc --noEmit",
+    "test": "ts-node src/run.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandu926/DepthGuard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandu926/DepthGuard/issues"
+  },
+  "homepage": "https://github.com/pandu926/DepthGuard/tree/main/proof",
+  "dependencies": {
+    "@meteora-ag/cp-amm-sdk": "1.5.1",
+    "@meteora-ag/dynamic-bonding-curve-sdk": "1.5.13",
+    "@solana/spl-token": "0.4.14",
+    "@solana/web3.js": "1.98.4",
+    "bn.js": "5.2.2",
+    "decimal.js": "10.6.0",
+    "litesvm": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "5.2.0",
+    "@types/node": "22.20.4",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3"
+  },
+  "private": true
+}

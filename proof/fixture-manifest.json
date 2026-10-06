@@ -1,0 +1,10 @@
+{
+  "repository": "MeteoraAg/dynamic-bonding-curve-sdk",
+  "commit": "a28b7239e71899eb52ff7aacac4dec90441885c4",
+  "directory": "packages/dynamic-bonding-curve/tests/fixtures",
+  "sha256": {
+    "dynamic_bonding_curve.so": "71e06857b67882bff19d9c57134b150530a168973eea30c75edc7ceec4eaf401",
+    "cp_amm.so": "af48ce6be0f2c589b389751596e8b5303b5ca444e6d46708fff008e7689ab6e9",
+    "metaplex.so": "28d1fcad13c77e5c976289a6983d1258309af4a9762cf50aef80b5537732e87f"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "network": "devnet",
+  "provider": "Alchemy",
+  "genesis": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "read_only": true,
+  "writes_performed": false,
+  "finalized_receipts_verified": 54,
+  "recorded_at": "2026-10-03T13:40:12.402Z"
+}

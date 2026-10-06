@@ -1,0 +1,23 @@
+groups:
+  - name: depthguard
+    rules:
+      - alert: DepthGuardApiUnavailable
+        expr: up{job="depthguard"} == 0
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: "DepthGuard API is unavailable"}
+      - alert: DepthGuardQueueBacklog
+        expr: depthguard_queue_depth > 20
+        for: 5m
+        labels: {severity: warning}
+        annotations: {summary: "Research queue exceeds expected capacity"}
+      - alert: DepthGuardWorkerHeartbeatStale
+        expr: time() - depthguard_worker_heartbeat_seconds > 45
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: "DepthGuard research worker heartbeat is stale"}
+      - alert: DepthGuardOffHostBackupStale
+        expr: depthguard_backup_success_seconds > 0 and time() - depthguard_backup_success_seconds > 600
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: "DepthGuard configured off-host backup is stale"}

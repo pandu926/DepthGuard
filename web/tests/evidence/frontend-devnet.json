@@ -1,0 +1,1766 @@
+{
+  "network": "devnet",
+  "origin": "https://depthguard.rbexp.com",
+  "started_at": "2026-10-06T08:06:11.551Z",
+  "wallet_kind": "Wallet Standard adapter backed by real persisted Ed25519 keypairs; no browser extension claims",
+  "application_actions": "Browser UI only; no direct API calls or injected draft state",
+  "checkpoints": [
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:07:10.839Z"
+    },
+    {
+      "stage": "wrapped",
+      "amount": "0.5",
+      "at": "2026-10-06T08:07:23.746Z"
+    },
+    {
+      "stage": "launch-ready",
+      "name": "UI meme 4045890",
+      "symbol": "UME5890",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/89b9445d-67e8-4812-a6f7-46edd22b0112",
+      "token": "/tokens/AthaMmJA9VM4wtC2cJDhMdJXVuGP63PQYJ7iWXaUJG68",
+      "at": "2026-10-06T08:08:22.970Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI meme 4045890",
+      "side": "buy",
+      "amount": "0.001",
+      "at": "2026-10-06T08:08:38.158Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI meme 4045890",
+      "side": "sell",
+      "amount": "100",
+      "at": "2026-10-06T08:08:53.880Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI meme 4045890",
+      "side": "buy",
+      "amount": "0.12",
+      "protocol": "dbc",
+      "signature": "3QCASw9A3ML4mwKRp8Rd5g3NqaCQkoZTGxR8tzgV8xrC5NYmoGB6Skix2XDiean5vjC9UPbawpP2JHGZN6Ajc41W",
+      "note": "Recovered from finalized UI toast and passive receipt after post-graduation quote refresh incorrectly rendered an error; screenshot retained in local evidence.",
+      "at": "2026-10-06T08:10:15.417Z"
+    },
+    {
+      "stage": "wallet-funded",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "devnet_lamports": 872985280,
+      "signature": "2Yjti5SP7Y4HTYyqx2AAoNknNmf8upyQK2BNKhhvcj3HrQMr3r6Ak4hMpKycocSmBVwQXA8ivMXm1kWkv5eWkxhM",
+      "note": "Devnet funding prerequisite; independent RPC confirmed finalized."
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:10:18.252Z"
+    },
+    {
+      "stage": "graduated",
+      "token": "/tokens/AthaMmJA9VM4wtC2cJDhMdJXVuGP63PQYJ7iWXaUJG68",
+      "at": "2026-10-06T08:10:33.389Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI meme 4045890",
+      "side": "buy",
+      "amount": "0.001",
+      "protocol": "damm_v2",
+      "at": "2026-10-06T08:10:52.197Z"
+    },
+    {
+      "stage": "launch-ready",
+      "name": "UI backed 4253166",
+      "symbol": "UBA3166",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/77919dff-58a3-4f9c-b8b0-1bef0283c89a",
+      "token": "/tokens/dLLBUg1AcdrjXkdV1mDnXQGg48KCQmkXjy1eLLKt38J",
+      "at": "2026-10-06T08:11:58.328Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI backed 4253166",
+      "side": "buy",
+      "amount": "0.001",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:12:16.147Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI backed 4253166",
+      "side": "sell",
+      "amount": "100",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:12:25.904Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI backed 4253166",
+      "side": "buy",
+      "amount": "0.12",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:12:41.608Z"
+    },
+    {
+      "stage": "graduated",
+      "token": "/tokens/dLLBUg1AcdrjXkdV1mDnXQGg48KCQmkXjy1eLLKt38J",
+      "at": "2026-10-06T08:13:16.131Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI backed 4253166",
+      "side": "buy",
+      "amount": "0.001",
+      "protocol": "damm_v2",
+      "at": "2026-10-06T08:13:31.859Z"
+    },
+    {
+      "stage": "launch-ready",
+      "name": "UI funding 4412236",
+      "symbol": "UFU2236",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/67e18584-3761-4b36-8262-0bb9cf0fe9e0",
+      "token": "/tokens/HC29Bxm9uvaZNu2SgGZPMCi9wf3Ez9LoJLfrm5kjwhhB",
+      "at": "2026-10-06T08:14:42.613Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI funding 4412236",
+      "side": "buy",
+      "amount": "0.001",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:15:14.648Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI funding 4412236",
+      "side": "sell",
+      "amount": "100",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:15:29.420Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI funding 4412236",
+      "side": "buy",
+      "amount": "0.12",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:15:45.208Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:16:55.106Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:18:24.045Z"
+    },
+    {
+      "stage": "graduated",
+      "token": "/tokens/HC29Bxm9uvaZNu2SgGZPMCi9wf3Ez9LoJLfrm5kjwhhB",
+      "recovered_from_ui": true,
+      "at": "2026-10-06T08:18:25.108Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI funding 4412236",
+      "side": "buy",
+      "amount": "0.001",
+      "protocol": "damm_v2",
+      "at": "2026-10-06T08:18:39.723Z"
+    },
+    {
+      "stage": "core-lifecycles-completed",
+      "at": "2026-10-06T08:18:39.724Z"
+    },
+    {
+      "stage": "reserve-donation-and-redemption",
+      "at": "2026-10-06T08:19:11.442Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "7Th3GCQ7jovB421T1FzeQHB4MAU5x4LHNm6XwtaMiCH7",
+      "at": "2026-10-06T08:19:12.426Z"
+    },
+    {
+      "stage": "review-true-0",
+      "at": "2026-10-06T08:19:28.077Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "FT9aZfabJas6By15wjp5WfvN6nurLjK3FN5k4ycMNcJQ",
+      "at": "2026-10-06T08:19:28.950Z"
+    },
+    {
+      "stage": "review-true-1",
+      "at": "2026-10-06T08:19:43.395Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "7Th3GCQ7jovB421T1FzeQHB4MAU5x4LHNm6XwtaMiCH7",
+      "at": "2026-10-06T08:19:44.593Z"
+    },
+    {
+      "stage": "review-false-0",
+      "at": "2026-10-06T08:20:00.473Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "FT9aZfabJas6By15wjp5WfvN6nurLjK3FN5k4ycMNcJQ",
+      "at": "2026-10-06T08:20:03.521Z"
+    },
+    {
+      "stage": "review-false-1",
+      "at": "2026-10-06T08:20:19.363Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:20:34.717Z"
+    },
+    {
+      "stage": "core-lifecycles-completed",
+      "at": "2026-10-06T08:20:34.720Z"
+    },
+    {
+      "stage": "funding-refund",
+      "at": "2026-10-06T08:20:49.802Z"
+    },
+    {
+      "stage": "extended-funding-wrapped",
+      "at": "2026-10-06T08:21:05.624Z"
+    },
+    {
+      "stage": "launch-ready",
+      "name": "UI funding_completed 4867440",
+      "symbol": "UFU7440",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/762b3772-2144-44d5-9630-cba90a7f1388",
+      "token": "/tokens/NJxZzmaa26NxQCTFV4JHtVGaGFKsc7WxPAGJYTNdS11",
+      "at": "2026-10-06T08:23:03.524Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI funding_completed 4867440",
+      "side": "buy",
+      "amount": "0.12",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:23:18.240Z"
+    },
+    {
+      "stage": "graduated",
+      "token": "/tokens/NJxZzmaa26NxQCTFV4JHtVGaGFKsc7WxPAGJYTNdS11",
+      "at": "2026-10-06T08:23:56.306Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "7Th3GCQ7jovB421T1FzeQHB4MAU5x4LHNm6XwtaMiCH7",
+      "at": "2026-10-06T08:23:57.304Z"
+    },
+    {
+      "stage": "funding_completed-vote-0",
+      "at": "2026-10-06T08:24:12.954Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "FT9aZfabJas6By15wjp5WfvN6nurLjK3FN5k4ycMNcJQ",
+      "at": "2026-10-06T08:24:13.768Z"
+    },
+    {
+      "stage": "funding_completed-vote-1",
+      "at": "2026-10-06T08:24:29.327Z"
+    },
+    {
+      "stage": "funding_completed",
+      "token": "/tokens/NJxZzmaa26NxQCTFV4JHtVGaGFKsc7WxPAGJYTNdS11",
+      "at": "2026-10-06T08:24:30.309Z"
+    },
+    {
+      "stage": "launch-ready",
+      "name": "UI funding_expired 5070726",
+      "symbol": "UFU0726",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/dbf4edc4-1f0e-4b9f-aa3d-bf160536f67c",
+      "token": "/tokens/6y9SDkfHGuBLYxbT4HxkoqHv1CDBa6f4pZR5rGyX2sFk",
+      "at": "2026-10-06T08:26:33.207Z"
+    },
+    {
+      "stage": "swap",
+      "mechanism": "UI funding_expired 5070726",
+      "side": "buy",
+      "amount": "0.12",
+      "protocol": "dbc",
+      "at": "2026-10-06T08:26:49.544Z"
+    },
+    {
+      "stage": "graduated",
+      "token": "/tokens/6y9SDkfHGuBLYxbT4HxkoqHv1CDBa6f4pZR5rGyX2sFk",
+      "at": "2026-10-06T08:27:32.303Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:28:56.773Z"
+    },
+    {
+      "stage": "core-lifecycles-completed",
+      "at": "2026-10-06T08:28:56.776Z"
+    },
+    {
+      "stage": "funding_expired",
+      "token": "/tokens/6y9SDkfHGuBLYxbT4HxkoqHv1CDBa6f4pZR5rGyX2sFk",
+      "at": "2026-10-06T08:29:27.807Z"
+    },
+    {
+      "stage": "funding_completed-damm-fees-generated",
+      "at": "2026-10-06T08:29:40.646Z"
+    },
+    {
+      "stage": "funding_expired-damm-fees-generated",
+      "at": "2026-10-06T08:29:55.470Z"
+    },
+    {
+      "stage": "fee-sweep-UME5890-DBC",
+      "at": "2026-10-06T08:30:14.163Z"
+    },
+    {
+      "stage": "fee-sweep-UME5890-DAMM",
+      "at": "2026-10-06T08:30:24.766Z"
+    },
+    {
+      "stage": "fee-sweep-UBA3166-DBC",
+      "at": "2026-10-06T08:30:40.382Z"
+    },
+    {
+      "stage": "fee-sweep-UBA3166-DAMM",
+      "at": "2026-10-06T08:30:50.990Z"
+    },
+    {
+      "stage": "fee-sweep-UFU2236-DBC",
+      "at": "2026-10-06T08:31:07.677Z"
+    },
+    {
+      "stage": "fee-sweep-UFU2236-DAMM",
+      "at": "2026-10-06T08:31:19.389Z"
+    },
+    {
+      "stage": "fee-sweep-UFU7440-DBC",
+      "at": "2026-10-06T08:31:31.171Z"
+    },
+    {
+      "stage": "fee-sweep-UFU7440-DAMM",
+      "at": "2026-10-06T08:31:41.851Z"
+    },
+    {
+      "stage": "fee-sweep-UFU0726-DBC",
+      "at": "2026-10-06T08:31:58.512Z"
+    },
+    {
+      "stage": "fee-sweep-UFU0726-DAMM",
+      "at": "2026-10-06T08:32:09.198Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:43:32.096Z"
+    },
+    {
+      "stage": "core-lifecycles-completed",
+      "at": "2026-10-06T08:43:32.098Z"
+    },
+    {
+      "stage": "fee-claim-finalized",
+      "at": "2026-10-06T08:43:41.688Z"
+    },
+    {
+      "stage": "fee-claim-finalized",
+      "at": "2026-10-06T08:43:58.366Z"
+    },
+    {
+      "stage": "fee-claim-finalized",
+      "at": "2026-10-06T08:44:14.359Z"
+    },
+    {
+      "stage": "fee-claim-finalized",
+      "at": "2026-10-06T08:44:30.136Z"
+    },
+    {
+      "stage": "fees-swept-and-claimed",
+      "claims": 4,
+      "at": "2026-10-06T08:44:30.147Z"
+    },
+    {
+      "stage": "asset-quote-research-only-guard",
+      "at": "2026-10-06T08:44:33.495Z"
+    },
+    {
+      "stage": "invalid-import-identity-and-reviewer-guards",
+      "at": "2026-10-06T08:44:33.496Z"
+    },
+    {
+      "stage": "model-version-published",
+      "version": "https://depthguard.rbexp.com/models/070036b6-388c-477c-a646-a628fbfffd17",
+      "note": "Resumed the model whose begin/write/seal receipts finalized through the browser before the harness incorrectly expected a transaction for the complete response.",
+      "at": "2026-10-06T08:53:10.759Z"
+    },
+    {
+      "stage": "wallet-funded",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "devnet_lamports": 712030200,
+      "signature": "3i7FmBJXFdK4Acr9efzQiEZ736eZenrhwXKg6ZKtA4hyPb9cKPKP8DfsXshzanpnoat7zXaCyPjrwQkJavRFzV7o",
+      "at": "2026-10-06T08:53:14.292Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T08:53:15.850Z"
+    },
+    {
+      "stage": "core-lifecycles-completed",
+      "at": "2026-10-06T08:53:15.851Z"
+    },
+    {
+      "stage": "studio-model-published-forked-imported",
+      "version": "https://depthguard.rbexp.com/models/070036b6-388c-477c-a646-a628fbfffd17",
+      "at": "2026-10-06T08:53:18.118Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "BJFxhdZ6rSqmAnMJh9dskqtwmv5znYopXe1KE4FZSsyd",
+      "at": "2026-10-06T08:53:19.021Z"
+    },
+    {
+      "stage": "cross-wallet-author-attribution-preserved",
+      "at": "2026-10-06T08:53:19.994Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "graduation",
+      "at": "2026-10-06T08:53:21.388Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "single_swap",
+      "at": "2026-10-06T08:53:21.525Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "sequential_trading",
+      "at": "2026-10-06T08:53:21.693Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "whale_sell",
+      "at": "2026-10-06T08:53:21.835Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "redemption",
+      "at": "2026-10-06T08:53:21.990Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "funding",
+      "at": "2026-10-06T08:53:22.117Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "compounding",
+      "at": "2026-10-06T08:53:22.264Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "royalty_fork",
+      "at": "2026-10-06T08:53:22.402Z"
+    },
+    {
+      "stage": "research-preview",
+      "scenario": "historical_replay",
+      "at": "2026-10-06T08:53:22.563Z"
+    },
+    {
+      "stage": "research-scenarios-and-export",
+      "at": "2026-10-06T08:53:23.339Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T09:01:29.036Z"
+    },
+    {
+      "stage": "core-lifecycles-completed",
+      "at": "2026-10-06T09:01:29.039Z"
+    },
+    {
+      "stage": "research-job-cancellation",
+      "job": "https://depthguard.rbexp.com/research/c4d8bc63-b56d-4ced-be69-d2752de2d9a8",
+      "at": "2026-10-06T09:01:33.590Z"
+    },
+    {
+      "stage": "creator-draft-navigation",
+      "at": "2026-10-06T09:01:35.780Z"
+    },
+    {
+      "stage": "search-pagination-receipts-mobile",
+      "at": "2026-10-06T09:01:38.964Z"
+    },
+    {
+      "stage": "landing-and-documentation-interactions",
+      "at": "2026-10-06T09:01:40.559Z"
+    },
+    {
+      "stage": "portfolio-mint-clipboard",
+      "at": "2026-10-06T09:01:41.672Z"
+    },
+    {
+      "stage": "unwrap-and-reconnect",
+      "at": "2026-10-06T09:01:53.387Z"
+    },
+    {
+      "stage": "mobile-route-coverage",
+      "routes": [
+        "/",
+        "/docs",
+        "/explore",
+        "/models",
+        "/studio",
+        "/research",
+        "/create/identity",
+        "/create/parameters",
+        "/creator",
+        "/authors",
+        "/portfolio",
+        "/earnings",
+        "/activity",
+        "/settings",
+        "/tokens/NJxZzmaa26NxQCTFV4JHtVGaGFKsc7WxPAGJYTNdS11",
+        "/tokens/dLLBUg1AcdrjXkdV1mDnXQGg48KCQmkXjy1eLLKt38J/reserve",
+        "/tokens/HC29Bxm9uvaZNu2SgGZPMCi9wf3Ez9LoJLfrm5kjwhhB/funding"
+      ],
+      "at": "2026-10-06T09:01:59.213Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "EwA1yhgafvrWHbksqjtPCCj5c4bRC5nKnzaECTZRYyVF",
+      "at": "2026-10-06T09:02:00.752Z"
+    },
+    {
+      "stage": "holder-wrapped",
+      "at": "2026-10-06T09:02:12.562Z"
+    },
+    {
+      "stage": "holder-bought",
+      "at": "2026-10-06T09:02:29.032Z"
+    },
+    {
+      "stage": "holder-sold",
+      "at": "2026-10-06T09:02:45.350Z"
+    },
+    {
+      "stage": "holder-redeemed",
+      "at": "2026-10-06T09:02:56.354Z"
+    },
+    {
+      "stage": "independent-holder-trading-and-redemption",
+      "wallet": "EwA1yhgafvrWHbksqjtPCCj5c4bRC5nKnzaECTZRYyVF",
+      "at": "2026-10-06T09:03:12.928Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/",
+      "at": "2026-10-06T09:03:15.530Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/docs",
+      "at": "2026-10-06T09:03:17.803Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/explore",
+      "at": "2026-10-06T09:03:19.698Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/models",
+      "at": "2026-10-06T09:03:21.526Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/creator",
+      "at": "2026-10-06T09:03:23.392Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/authors",
+      "at": "2026-10-06T09:03:25.296Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/portfolio",
+      "at": "2026-10-06T09:03:27.157Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/earnings",
+      "at": "2026-10-06T09:03:29.277Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/activity",
+      "at": "2026-10-06T09:03:31.287Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/settings",
+      "at": "2026-10-06T09:03:33.127Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/research",
+      "at": "2026-10-06T09:03:35.009Z"
+    },
+    {
+      "stage": "wallet-transaction-rejection",
+      "at": "2026-10-06T09:03:37.209Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "4sPFMPe4L3kzKfvQcaV7KsNfCjy6SVV8ak4F8uU4Rvif",
+      "at": "2026-10-06T09:03:38.488Z"
+    },
+    {
+      "stage": "empty-wallet-swap-rejected",
+      "wallet": "4sPFMPe4L3kzKfvQcaV7KsNfCjy6SVV8ak4F8uU4Rvif",
+      "message": "Swap simulation rejected; check balances and current liquidity",
+      "at": "2026-10-06T09:03:42.319Z"
+    },
+    {
+      "stage": "independent-finality-verified",
+      "transactions": 97,
+      "at": "2026-10-06T09:03:48.896Z"
+    },
+    {
+      "stage": "wallet-authenticated",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "at": "2026-10-06T09:12:19.177Z"
+    },
+    {
+      "stage": "core-lifecycles-completed",
+      "at": "2026-10-06T09:12:19.190Z"
+    },
+    {
+      "stage": "research-cancel-completion-race",
+      "job": "https://depthguard.rbexp.com/research/f179e82e-2a55-41a3-a47a-63df5ae838bd",
+      "response_status": 404,
+      "at": "2026-10-06T09:12:22.927Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/",
+      "at": "2026-10-06T09:12:25.676Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/docs",
+      "at": "2026-10-06T09:12:28.113Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/explore",
+      "at": "2026-10-06T09:12:29.940Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/models",
+      "at": "2026-10-06T09:12:31.955Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/creator",
+      "at": "2026-10-06T09:12:34.068Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/authors",
+      "at": "2026-10-06T09:12:36.122Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/portfolio",
+      "at": "2026-10-06T09:12:38.070Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/earnings",
+      "at": "2026-10-06T09:12:39.943Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/activity",
+      "at": "2026-10-06T09:12:41.871Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/settings",
+      "at": "2026-10-06T09:12:43.651Z"
+    },
+    {
+      "stage": "route-rendered",
+      "route": "/research",
+      "at": "2026-10-06T09:12:45.718Z"
+    },
+    {
+      "stage": "independent-finality-verified",
+      "transactions": 97,
+      "at": "2026-10-06T09:12:51.634Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "eb64725e-c949-4638-a95d-456cddb525c5",
+      "signature": "4wVZJ5ukkKQNu2aEtKs6U5wuz3idDREfnQtw8M8973daMPdyrwhis9rx4enUktZ1Mc6edpDQGThTiCfAACGeBVCR",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "92d27950-2fc3-485d-9569-4c7200bc7147",
+      "signature": "5AHb5Gmxpn7GT7ypPJpXNVAS9RxeJCGmazNZgyqCnvEo6ZFnL6dRat5bK9WjkDEQpYQMPGJiuACrge8SqvAGvJsx",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "fee_vault"
+    },
+    {
+      "id": "5867fa06-9ddd-4e13-9730-9f2dceefb7ea",
+      "signature": "4NEEfK5PwDQdARuGTGXvYHvDQjqWEkNv4hJ7cxgXg76b9NXN9H1a8odDnEez9RW7PjQnDmAoc4jCRmCgEiCsWMqD",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "initialize_launch"
+    },
+    {
+      "id": "b81eaca0-09fc-4081-a96f-bb085f8c3eaf",
+      "signature": "2eAhsjb76hCvSJAtxG7mFhnS4RfXX13LjHJFyHH2LgvgVvH6E8gn7VtZBZizXxfR3MxEn2FoWTgafxNFwB4A74DC",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "create_config"
+    },
+    {
+      "id": "2fa81247-b330-4be6-97a8-66def22acc95",
+      "signature": "o3Tv1USw2iP3eGwtJEPQ53p6tpMhxDAHKMD43h3Te4FUfURLtDt4nB9Riv56PNcaFMag4gUehRwo9CQPwC3s1tn",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "create_pool"
+    },
+    {
+      "id": "ed882570-082e-4d1a-949b-65885124d96b",
+      "signature": "5V2HvhGmPFQ2sd2KkdazVCatBidhMuEAjasWG5DoNQodzYBZjhW6bvZznTLsuSofYNAze424wEgKt56XjWUjbEhL",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "716c7c01-bf7a-4be5-8b67-e7e92857ed30",
+      "signature": "R6nbCSrF5L5NWT1YzubX2yRRtPYgDb3DsCF4DBJMzn5ycFGcfmrszsaXRoPtwRXLTfofrnRt5DZmGxh9arFHqca",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "4b91817b-c9fd-46bf-9ed1-dd8f10894f50",
+      "signature": "3QCASw9A3ML4mwKRp8Rd5g3NqaCQkoZTGxR8tzgV8xrC5NYmoGB6Skix2XDiean5vjC9UPbawpP2JHGZN6Ajc41W",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "d5b3513b-2176-4532-b311-09a6e3d72581",
+      "signature": "9BjZ2M2mFjGhR9W5wwFiWXqS4Y3AUb3PdMrWyDd64T8jyNM32PHcRaX2MGo5JHJPtn3PNHKw1YWAkekvteKZJvc",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "6c483135-6420-43dd-96e7-fcf289cb5d01",
+      "signature": "3coWLFAzjxjaHuZ9uQ3v44h35ZG6qdmaXxKSrWgCtaXFrEsALAGuwWmJjZJ8W81mqAmJVFfYxnyNKQKzSj2yLWpt",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "fee_vault"
+    },
+    {
+      "id": "bdcdcfca-ebf1-4468-8919-792885f50f6a",
+      "signature": "4dqJuNJdo68X4djuJhFUrUwotE63yFd5caTygBBuYgj5KTCe7CzpffWeqYYQYkPxBoMQyPKSnGkHs8T3ANaV2RiN",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "initialize_launch"
+    },
+    {
+      "id": "2fcd31b9-165a-42bf-85f8-fc76b93580a8",
+      "signature": "3e4HUsy6R9HNEWdFU73QC1h1983JMnaCS7iTkV96VEKcCy2UzRiv79CCqZAo4HKG92GcPJdBLTKy4vNoJsMZ2jRB",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "create_config"
+    },
+    {
+      "id": "088bcf40-e202-487b-b3bb-3f3c4c5b6c89",
+      "signature": "2Ansvb2FhwJcQgTfGHreSHsp7dioEfkbx4Wk1HREmDcpKwdzDohL7SnRJjcSN26XFxsGqA9L3UM6GARUyQD8DCuf",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "create_pool"
+    },
+    {
+      "id": "d1a219e0-e646-4f83-8b19-e20b2f839b24",
+      "signature": "4WS9AGKZgTobJrjzxqRAGbQobUcGv7puiVXzsPmP2DFuJqSnVmwvm3MWFUSNe6cgondEb82RoUZZ9wzSxHSJ3PVW",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "initialize_module"
+    },
+    {
+      "id": "3a06c95e-6eb5-4f14-b549-fe18bb4834a9",
+      "signature": "5G987Vs1qTAr4XBnaGpBT8NnYSAwye1cqJWPdVfcvegBnZFy69pS2GMBJMEegJCD15vUcJWgT5ZrT7hrMBdMYD25",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "7c3c2b21-b893-4274-a73b-12fc1d8bf35d",
+      "signature": "4gQ1dM1rqcnebd4WtgRbE3XeFAoMrwH6foCeijHis9KZVSfLDD9GfuoHreCaxC1doCEWZ5nH1gCHUreWkTJHYNf2",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "c9b2f347-7789-44f5-a1ca-a74604d07ca5",
+      "signature": "AJunA4eEx3DmMuyFYpu12naCwCH6UACtfhpZewk7FP28iGxDNFyk1kNJXSnFq4sCcEB46jBCGa3V2mwgfZKQzUr",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "829bb9f8-c208-49f4-aaf0-2e075beae53f",
+      "signature": "2bNfkKrXTqLUpF9kyZrA8dQAZoTKZkQav4qzzv8FAWDD3wHVsQpdv81zPdZntZ17Ah55ktrrerkaS59PUj4kiJWP",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "fund_and_activate"
+    },
+    {
+      "id": "d72fef05-03fa-4a4c-bd9a-5558ff0de322",
+      "signature": "3RcR5BcraVkmbyfRNQUhkXHUsHf5V8MK6p7bgspVZh3kWfAAtzKtqyeDZ34LyYLBF5VJUYtcy3AqFFVzdSqV3Nfo",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "2cba6b81-9441-45d8-9c8c-0f57e9accb41",
+      "signature": "2LaH9iimtKHDZZDY1XBaE9yr59MC3xqmL4kCFPDHcrs6Myfcvp8B2sPNbc89Nwtntizbwj8VModHwchMSGcHG13N",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "fee_vault"
+    },
+    {
+      "id": "3f8e1aba-d0e6-435c-99be-2b7cb9707b19",
+      "signature": "5iU7d1KQNy9M7quSUwbGVDcpFW6Ueg9Bh6gVHGrPJ8wc99y5BjfeynrUSz94zyBPPAjavLsqKBjpMqTnih6aDVxR",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "initialize_launch"
+    },
+    {
+      "id": "c00a5d63-aab1-4df2-b053-c24c43a36c9d",
+      "signature": "26qxjQCeSYsmc27K5v53X4HeoHY64TTfVXX9RV9PQak1jGrgZdVt1q2YQwpTn2pvXfTvMVNFEDsHZ2An1vmqcL1h",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "create_config"
+    },
+    {
+      "id": "12de8845-6ddc-42c6-b724-5c972a8d870b",
+      "signature": "2hKdURdG8ahQSPRb3gkLzzT44DXkRJa6B4HbHPJZDxf6mXzaDdx6RLAnoynQAZ7JUTaavpJwAtzd3B3rnyNKWzHQ",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "create_pool"
+    },
+    {
+      "id": "d29aa6a4-5b82-4cd6-8373-af62f402b0ec",
+      "signature": "34GuKFasiTqzBxz2zJmWbaZVMoR2PYWLhBbzcDkJkEo6LDutVVZtvwTVJ7dTuZJ275cDKCLRtEaxnqhXgPvjcavq",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "action": "initialize_module"
+    },
+    {
+      "id": "7fe7b25e-1a82-4929-8d04-2e25af952bf2",
+      "signature": "5mYdT44bCVjCuv33yKxw6gNerN3ubcQhZHcHgTj3PjvytjAXoywhp9MPfe4QnxeAYdH8Qh9jtmSnfs5NhSANUUyf",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "9f556789-ac2b-4a55-be57-d67a2e49cc9e",
+      "signature": "5WQTF6p4A6BRmghzgWhBeCGAJA5BL57qBargq3xjb2yfW87q9YGxm82fzS4TYdEbt37g2G51ziy2moUGcFZTJog",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "d99eee44-71df-4ce8-b102-3ca1dfdd1497",
+      "signature": "4LEh3TJqct4LosMHMzZHrqCfGGGYoCYFSJRRNPf2B1gTTJj1YuR4RgcdvQ1dUbNVREcpoHxuKj9668PRaMiEmm5e",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized"
+    },
+    {
+      "id": "343ecbda-d3ac-4687-b047-e03e8f60dd39",
+      "signature": "5AXuG5iDXkSnTZapvuYyXMM5bCsj6uttsxupB6P3XvDMBYdfLZ9MkrtU98Jr4pPdNP8HwvCzxEtwmac5MSqEYdca",
+      "action": "swap",
+      "protocol": "damm_v2",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/343ecbda-d3ac-4687-b047-e03e8f60dd39"
+    },
+    {
+      "id": "e8ff503b-85e8-4eac-ba6f-c63c7938ce25",
+      "signature": "4kQZkk7bCh48WAA7a6CJoCHu5FWU4HmfDB81XSrXmRk9eogXM2R4iYEbmLNw5dYCpEYCoRLY9Jsv81qCxFEwvXTY",
+      "action": "reserve_deposit",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e8ff503b-85e8-4eac-ba6f-c63c7938ce25"
+    },
+    {
+      "id": "0c9eb6fe-4441-41e6-b2b4-e82451af2ea5",
+      "signature": "N6wtDb1SMJrN23YeA85gyyuiQvNSVjSvp7FbP54kFwJutSrHpMbTDtBKE3t26EcrsT6Woc1TZKcQ1YS842Sva3u",
+      "action": "reserve_redeem",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/0c9eb6fe-4441-41e6-b2b4-e82451af2ea5"
+    },
+    {
+      "id": "2938ea90-fe27-4db6-8a7f-ef897d022a3f",
+      "signature": "5MkFqXwooZF8H5RRRuzVmErezpdLKgvaBFc5nCMkPeJb5ojt99GtonEZm3pt5T9rVX7N4UBw1uLFQ6B1ZJfK9Ube",
+      "action": "escrow_vote",
+      "wallet": "7Th3GCQ7jovB421T1FzeQHB4MAU5x4LHNm6XwtaMiCH7",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/2938ea90-fe27-4db6-8a7f-ef897d022a3f"
+    },
+    {
+      "id": "0877abaf-20ec-468d-b532-0dbe955828b6",
+      "signature": "4SYJm8VdoJE9Qw4n2AQchANQZqdeWAeh8Y1ea4kQhdVGadZ4JZZCzUoZMCi7HMWcPKur5CNtuVXVoAceKBm96Gxs",
+      "action": "escrow_vote",
+      "wallet": "FT9aZfabJas6By15wjp5WfvN6nurLjK3FN5k4ycMNcJQ",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/0877abaf-20ec-468d-b532-0dbe955828b6"
+    },
+    {
+      "id": "68050f22-8f6f-4318-933d-e7b5dfbe6fc3",
+      "signature": "hNcFnuWye5Dhj9yNiT9qRRC37yTAy7FC8Htf5C57u4VSntzoiUXqRnjJ67MJFZT9HmQuteVTCnYPBU7ZyiDijQc",
+      "action": "escrow_vote",
+      "wallet": "7Th3GCQ7jovB421T1FzeQHB4MAU5x4LHNm6XwtaMiCH7",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/68050f22-8f6f-4318-933d-e7b5dfbe6fc3"
+    },
+    {
+      "id": "c06b0911-1048-4e7c-a72d-d7cd6d25e126",
+      "signature": "Vz361hAxGWxNz4ykf2MXfS97Kh139WTTavPyFPAPAybW1F8ytdnDXBSxxji6fe3buwJf8adZFN5xSiXL7KRELW7",
+      "action": "escrow_vote",
+      "wallet": "FT9aZfabJas6By15wjp5WfvN6nurLjK3FN5k4ycMNcJQ",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/c06b0911-1048-4e7c-a72d-d7cd6d25e126"
+    },
+    {
+      "id": "64c00fb1-440c-41d2-9fe2-955c8ae0cef4",
+      "signature": "3ibpMLBaMeJ4A8xzepu1McztthppGyeYjLeKGW7i7rrGfEXG65ttg55Ac9KCC15CoypSpkqvovEqnDs67fFXhe2s",
+      "action": "escrow_refund",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/64c00fb1-440c-41d2-9fe2-955c8ae0cef4"
+    },
+    {
+      "id": "6456ba82-f614-4494-b358-6974cf2646b6",
+      "signature": "5FgQxwbP613QVWPEJkE939NEyEgRDcaWmCcNJfKUFVqMoBG2RJYqwAMZfG4XZCaBCSY8uVTUcfdeL2iXpumHAnUn",
+      "action": "wrap_sol",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/6456ba82-f614-4494-b358-6974cf2646b6"
+    },
+    {
+      "id": "d13d580f-622e-448e-afd4-eeb19c29795d",
+      "signature": "agZdTV3V8hydHyM21dTjhLvtWRfmaMzh7Q1i5p1b8R8ZZ3U4PjBwCgM99HfSJLcTD3XDVMgSa1VV6hkizzEM8th",
+      "action": "begin_model",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/d13d580f-622e-448e-afd4-eeb19c29795d"
+    },
+    {
+      "id": "7633ff0f-13f5-42db-ab65-09b4677dc914",
+      "signature": "21DSj2RZU5xs9DgyvzdDndGt3uvS9uNrze46efQ1fMV4bfgYsEuhLN1uwRHTRAG7kwtm1Kb7jqchRv7cPvXvBQz4",
+      "action": "write_model_0",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/7633ff0f-13f5-42db-ab65-09b4677dc914"
+    },
+    {
+      "id": "57aa7805-7df9-421a-bf51-0b0104531db0",
+      "signature": "fWoirVjE6q5UegPu5HWzAQC97A3mqbcgzhFoirzPFi11jjx2nZTMNF6MA4Nswp6ZbYhYRMYVXvTeMWoD8QJhJvm",
+      "action": "seal_model",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/57aa7805-7df9-421a-bf51-0b0104531db0"
+    },
+    {
+      "id": "815f7903-c853-4860-b4db-7d0ffb6dd1dc",
+      "signature": "4G9noc9KUT49Pdq6b4v1EzsBuFZ1UomfuoQt7eEngSUPMSRmqsvZcjvJNjerAtwC6HJNQkaFa3rWjjxAWdK4ps8c",
+      "action": "fee_vault",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/762b3772-2144-44d5-9630-cba90a7f1388"
+    },
+    {
+      "id": "ec8218b9-b5e3-45a4-bdfa-293708b022e6",
+      "signature": "4s8EeGgNWZNLtTYVJzyXFgY2MZSugSRCc1k6ryZFWPhNR6RZWBty6Gra4kKK8AHrfLQoZxJkL6RpquRfxTDBt9NB",
+      "action": "initialize_launch",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/ec8218b9-b5e3-45a4-bdfa-293708b022e6"
+    },
+    {
+      "id": "e9ca1f41-1512-4f0a-8a7d-81541fcce93a",
+      "signature": "sMCEysSfgp5i3r6BfzwyWHEQZPYxdKUVJ2qzJC59dBqEzxC1shX4dK9HognZmhPuRygtLu7Qhs3yZXydYRWB5iA",
+      "action": "create_config",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e9ca1f41-1512-4f0a-8a7d-81541fcce93a"
+    },
+    {
+      "id": "db357124-08a4-4910-9b1c-e9d55cff86c8",
+      "signature": "2oSdgMNztm2K3ejMwX8qCPFk6uU3Ajou7TFmVFbik8je36QADqSiVSGnwyLaAffVTv15upnYRGXYhLvreVu456C8",
+      "action": "create_pool",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/db357124-08a4-4910-9b1c-e9d55cff86c8"
+    },
+    {
+      "id": "24b38eef-6c7e-4ac8-a877-b45999218d1e",
+      "signature": "5DbUj8zpNaohYAs72igCSrCDfwYDrL1dxSWhf2DFct2Q8U4Uh73K8kwJXmP6Gm7MRNKKWhnZxVs9doEerCPtjjsG",
+      "action": "initialize_module",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/24b38eef-6c7e-4ac8-a877-b45999218d1e"
+    },
+    {
+      "id": "d5ba0ce7-4ee4-4afd-aba3-9c84b592ad21",
+      "signature": "3JY7sGSJjZVTxyo8k31pzhzz2AsvaWdt87bhymc97572U8FERVWsfhB9Bv6GfyTo3FzjtAStcrJUZGDFA3Jm3Mt2",
+      "action": "swap",
+      "protocol": "dbc",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/d5ba0ce7-4ee4-4afd-aba3-9c84b592ad21"
+    },
+    {
+      "id": "42776ebe-6740-461d-806d-f6c7a8cd9fcc",
+      "signature": "4CT4hzjfeRfmqztnDT3bm1a9JAerYjaznPpnfj1zGVygLjcu87JkSeRHdQJ2D3kGBhXb3qhev5fyTJM4WY1djbUF",
+      "action": "native_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/42776ebe-6740-461d-806d-f6c7a8cd9fcc"
+    },
+    {
+      "id": "91f66045-fe42-4c0c-92cd-082d104dd5f4",
+      "signature": "36XqQtybVWERGPyBisDPx6aWJyLhSeuJBoxkkmE45MQKFu2u9NfUavgGLnHH9hoCd8L4X8RqAfamAQYAkLQhRyFa",
+      "action": "verify_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/762b3772-2144-44d5-9630-cba90a7f1388"
+    },
+    {
+      "id": "88385d68-febe-4812-bf0c-af177d36f398",
+      "signature": "5xu5LGHiEx3rqUxvMHrLAuxMzSZiGdVmGxSh1f62LYadxKuPbjX2soaZAuVbsRfJd8tCfBC5UuoPBrpsTtsMpTbG",
+      "action": "fund_and_activate",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/88385d68-febe-4812-bf0c-af177d36f398"
+    },
+    {
+      "id": "e9b2cc00-cfef-42cf-aedf-b199b83035bb",
+      "signature": "4u8Vj7tBtTua8Wku5VUcbyNxqdSyX9vjuSfx8TJHrPSkDJ2vBHiSc4NAv1ex3pnL42UuW27rYayEbqYSgtih1MDY",
+      "action": "escrow_vote",
+      "wallet": "7Th3GCQ7jovB421T1FzeQHB4MAU5x4LHNm6XwtaMiCH7",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e9b2cc00-cfef-42cf-aedf-b199b83035bb"
+    },
+    {
+      "id": "e2418417-f91d-4b30-8d6e-152f164d762a",
+      "signature": "4rZVBNqgXfL4URETFQaEgCU1fVassDgTCceuHLjZb7MCVce3vt9fZJHjL4SeZjCpwspL4eKV5BFV7VeFpxEamvFQ",
+      "action": "escrow_vote",
+      "wallet": "FT9aZfabJas6By15wjp5WfvN6nurLjK3FN5k4ycMNcJQ",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e2418417-f91d-4b30-8d6e-152f164d762a"
+    },
+    {
+      "id": "27fd79ec-0518-477a-96e5-759eb77c2aa8",
+      "signature": "7XRyCbCWsk17hCRDhquGDpmodTSPbUkZQ1oaVuvmQBwwUpKhdXGQ7R645hWPRDAQeNGZtu4ohEuTKW4FzmvkwH1",
+      "action": "begin_model",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/27fd79ec-0518-477a-96e5-759eb77c2aa8"
+    },
+    {
+      "id": "7ed55eb2-d7d8-4f62-998e-69101f2f1d8b",
+      "signature": "U4zcpUtBszC5BzKvaRjciL5Yt6bi4VJzLMbQMojByf6CGB5sTzJi3Zqc19GEzxc5B2sArS63HVjkVyFJGLg7eBA",
+      "action": "write_model_0",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/7ed55eb2-d7d8-4f62-998e-69101f2f1d8b"
+    },
+    {
+      "id": "b6867086-5547-4900-9c96-68ebc98a937c",
+      "signature": "37ADyDJxHYw8Eh12Z7969eAzAZ9oRrPzrGdDCB5yasdDzaTWi2UUSDdNZHd7LEbFWA8fywPTgJtWBkhGfAAVzv1E",
+      "action": "seal_model",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/b6867086-5547-4900-9c96-68ebc98a937c"
+    },
+    {
+      "id": "01cb8c91-fabc-4a29-b4d9-7371f53b6a0f",
+      "signature": "5rZ6mTpj7EC1ZRoVu3D8hj1kYDW247GPr4Z3RbcxS2YpYNM9fhvDmR7QimD9Q355WHZhsqF3wvHpdKoZZGPtg1nC",
+      "action": "fee_vault",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/01cb8c91-fabc-4a29-b4d9-7371f53b6a0f"
+    },
+    {
+      "id": "d4f6b2e2-47ee-41b5-be61-ad5c94a92d4f",
+      "signature": "2qUJEs6o4mKDtZGKSrgAFBZzJbbvw6TfbCH7145297pJnFYpLR6NCRKyH4SQvW8g3PqEBaAvCeVM5JjHbjVA8UW1",
+      "action": "initialize_launch",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/d4f6b2e2-47ee-41b5-be61-ad5c94a92d4f"
+    },
+    {
+      "id": "76f9bc3c-c1b1-4a9c-b772-2a24f57bb2b2",
+      "signature": "w2pREd8sGrvzVoCKdAKBgSyMhKozxKru6V1remjiNSqB6t2YxUcCDnbMomHomWvoRtdMcY1Ruxr36zoYkDTFSz6",
+      "action": "create_config",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/76f9bc3c-c1b1-4a9c-b772-2a24f57bb2b2"
+    },
+    {
+      "id": "839b5daa-860f-4740-8501-4569d51191ee",
+      "signature": "4YUYpjHQGa3qmDhDYiarxbta8NEHM5Ri8bMJWvzdsBap1QCwjoDhdrt8SySYDko8fpjgSCKgGoPfJp4GS44rf6vr",
+      "action": "create_pool",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/839b5daa-860f-4740-8501-4569d51191ee"
+    },
+    {
+      "id": "135b1144-cae3-4dd8-b268-49c9a5301c67",
+      "signature": "5AikXBFw7C53UD1jPycSFFyGRvBhG4VGU6Q1eSiDjJaBL4GkKzRtTN57TWrmPju8M8fmVtNdBxsCRLoa2BCZBZr2",
+      "action": "initialize_module",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/dbf4edc4-1f0e-4b9f-aa3d-bf160536f67c"
+    },
+    {
+      "id": "93dcc029-9211-4902-b3a4-e00e7d4d885f",
+      "signature": "37bwUR3bSmAG6mmgSvnJ8yGaCjcZgy3q5AHEWsnuoA5bY2cp6ZFdjw7Q4VSN7saJyz4UnYEaHyxKRsrousL4etVs",
+      "action": "swap",
+      "protocol": "dbc",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/93dcc029-9211-4902-b3a4-e00e7d4d885f"
+    },
+    {
+      "id": "cb855d9d-c624-4059-9a0e-4d7c85f8aa6c",
+      "signature": "2zqtMVg41wNnuNXiT392NVCLFzmktraQ9x7nnM7FsRRrGmegKVGQouc2Fs4wb6eBQWKVpcuSPXqr6knzUzBqjy8A",
+      "action": "native_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/dbf4edc4-1f0e-4b9f-aa3d-bf160536f67c"
+    },
+    {
+      "id": "8dbd2920-be1e-4ee2-a2f6-7bd11e27c29b",
+      "signature": "3eLDGQ4vbu9Fkhv92vMJmVo83mduH8o34RTgq3ik5u6ECxVqzccMPMcGiEPsE1DSq3KFG1y7KNTQnDo5TsFnCDGd",
+      "action": "verify_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/8dbd2920-be1e-4ee2-a2f6-7bd11e27c29b"
+    },
+    {
+      "id": "8aca6cd1-aaf8-45c7-b71a-2608ce823c24",
+      "signature": "3WGvqQpoNPXFaF3t4Dq2Aj637UGUnfZygMBdrsTt6nH3mrY8CofVwP8z9BPJyGdUV7aTGdBTEGXfD1nZj41GGFTe",
+      "action": "fund_and_activate",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/8aca6cd1-aaf8-45c7-b71a-2608ce823c24"
+    },
+    {
+      "id": "675d7da4-d435-499e-9c26-d080d80f3387",
+      "signature": "2gy56nQ2pbSJ88M4vbUK6BGMjuF8d1hZMjpRPxrr3VioA3NDRNpg2voG6KSLLmDiMwaS2GF7bbHaAZVkDNX9FdKq",
+      "action": "escrow_fail_expired",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/675d7da4-d435-499e-9c26-d080d80f3387"
+    },
+    {
+      "id": "e5a86f98-63a2-4ad6-85bb-1ef382f79952",
+      "signature": "62xAWAyCtirMTsgxMe59RZovArNNgEHkywVy2sSKk4GYTyiLyfRCUgXovwMb28juY8DgRofiRaYPTqxmZm8GGW6j",
+      "action": "escrow_refund",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e5a86f98-63a2-4ad6-85bb-1ef382f79952"
+    },
+    {
+      "id": "87df6c35-8a65-4a18-a683-165d8fabd81a",
+      "signature": "64xhUcZ1vJsNAtnCsXzes9dAWAEx97p1DqccqA8zr5XGJUkuDPL21JGxn5betuk7awADsHzJrc34DbrZymbZbXvz",
+      "action": "swap",
+      "protocol": "damm_v2",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/87df6c35-8a65-4a18-a683-165d8fabd81a"
+    },
+    {
+      "id": "d9f11f90-691e-45a1-b559-4ba3298a08e3",
+      "signature": "N4m5qGiNW4dzWRqRhViYssbpEfwj1n9mcsaHpyaSbwvknUzCQi7u9RCKgoesg7wyvnKfigLQAsfrd3DkiokbwqF",
+      "action": "swap",
+      "protocol": "damm_v2",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/d9f11f90-691e-45a1-b559-4ba3298a08e3"
+    },
+    {
+      "id": "e6048393-e21b-4e32-abd2-e758e92745f6",
+      "signature": "4ryBmTuhf2Fij2VZnZRG4xG4jPQmkDGR6SjYw6j4STv1X2eaxHGpUzXQUQBCpifWiFTueiG4QeWoiBV8gBPvaTEx",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e6048393-e21b-4e32-abd2-e758e92745f6"
+    },
+    {
+      "id": "d2156077-a78b-4778-9617-205812ddb8f2",
+      "signature": "L9ivauRTq9VYt2n7yC3TUjfCSdogwtLqjPZonrkFnGNVVYtak8GMBRXRFDMGoQxQ9r2gk4QeZtokqMqyq5g2157",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/d2156077-a78b-4778-9617-205812ddb8f2"
+    },
+    {
+      "id": "7463fc68-a8bf-434c-a3f3-280f680f57de",
+      "signature": "58JyBXD8sei3kdcZRM1BxePEjNP5LsjbBHrkE3SSeMNYTgaQAcsmjC57Lmb6TFG6qbQw9jMqq9dWz5FA62jHtWgd",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/7463fc68-a8bf-434c-a3f3-280f680f57de"
+    },
+    {
+      "id": "8769c879-992a-449a-993f-b0e97db52b79",
+      "signature": "8cUAY6xB5mTT6kc3DW7i4f6mqZW1BKAgjQaMfWBTbZ5hbvae1BMnzJNduBCwsThnPrhVDW4LyxiCSPfwwapFKFM",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/8769c879-992a-449a-993f-b0e97db52b79"
+    },
+    {
+      "id": "34916520-3ede-4360-b203-f01778fdfe12",
+      "signature": "48mESKeGqz7g7i8XLZNSMmY1ZJGe5yfkXa6BMbG2uWCJGVx9Z3jF5kbtu2SRved4nGDVh2stCVGBe2tKYByUeFxZ",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/34916520-3ede-4360-b203-f01778fdfe12"
+    },
+    {
+      "id": "123aebee-53f7-4c01-97b2-0f45d5272ad9",
+      "signature": "uV7XiFziGdzm2zxNWuJuEtufWirWg7w88mN4tYkhTotxYrGoRBNxw1Zt7ZECAbXQXyfdWuJYhLTjv2w3Pa8W7Jx",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/123aebee-53f7-4c01-97b2-0f45d5272ad9"
+    },
+    {
+      "id": "f6f97067-1fb0-4f22-8b00-d75afd26cda9",
+      "signature": "3ieBEXySFyLrW9jiq6puSaWi51TwNwaT6MD7D8icLM1UqjDJBHEWLE5y3WZwKh2BtYSj67aACPZyCFAonU5DPNU4",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/f6f97067-1fb0-4f22-8b00-d75afd26cda9"
+    },
+    {
+      "id": "9af89d94-549e-4e6f-9be0-d254d9f68732",
+      "signature": "39EdybkrGvEi1CDLNfgx8AaEoy5zUpUiyYtfpLqTtVeEUdfdBedHFDbvZq4WCz7m6S7QaWCxhYwyvw3DafZP4BbK",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/9af89d94-549e-4e6f-9be0-d254d9f68732"
+    },
+    {
+      "id": "888f8ef1-6aaa-4af1-aafa-e37970c998c4",
+      "signature": "5HAFhJcE2k8gvAfeBukChoL67x4GTF9N1faJD6qDET1gZ3zMCpSvog7cjobsoWwSVmZqhhJYKv1LfDNFixHwKpcB",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/888f8ef1-6aaa-4af1-aafa-e37970c998c4"
+    },
+    {
+      "id": "5c34c8d5-5167-4cf4-9a2d-10dc06b4e4a7",
+      "signature": "5JwtGX4UZcKoxe2oPkiq7KVYRsjF69LQbaMa2K4E61n7HFov2aErCSFN7z3h5Xp2tNTzpaJ3NifeQfppQyxQZkCm",
+      "action": "dfs_fee_sweep",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/5c34c8d5-5167-4cf4-9a2d-10dc06b4e4a7"
+    },
+    {
+      "id": "86519970-f66e-464a-bc4a-9b1629c37e36",
+      "signature": "uwCAfC2JSMdQBywfwHxVBzBB5THJe7Q53tahJhsiV4bSFHHKNy3TsBkaemMreKoz5eLHBk65zcYBTCdph6n1zME",
+      "action": "dfs_claim",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/86519970-f66e-464a-bc4a-9b1629c37e36"
+    },
+    {
+      "id": "23d4f7e4-fb25-4865-8acc-6531e7e7f319",
+      "signature": "24HqaatigZSmnLgb3BAE8sEqtG5BGfov7XF1Dya5qzzkszDLSKTWAio1EJigUEPqrznDQ1tt5C3p9ggzyDFhVDaz",
+      "action": "dfs_claim",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/23d4f7e4-fb25-4865-8acc-6531e7e7f319"
+    },
+    {
+      "id": "77f374f6-c125-4d58-804f-c6c349ba427e",
+      "signature": "2p3Mrz7dFa5k4gKYj8Lfa1wC7yvYAuuFVJYo57ps7gYdzsW3pbym6JpcLSMd4XPGR3biK57R7Gw8xSFEFrFusdq",
+      "action": "dfs_claim",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/77f374f6-c125-4d58-804f-c6c349ba427e"
+    },
+    {
+      "id": "ccca0cc7-52ab-4336-a426-4bf300c6d129",
+      "signature": "31rAqszvnEQRsp2pczbw78Uga5fU17Azcn4yWa7My1Zon53a9H1koQG2XMU8uFoWknSTHTQm9QzVEfDFKutYFASZ",
+      "action": "dfs_claim",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/ccca0cc7-52ab-4336-a426-4bf300c6d129"
+    },
+    {
+      "id": "d677c547-2b78-4359-adc6-9a082fb183ea",
+      "signature": "36iJYZMmrVoYEQwNs6gHR3E47R2RdiNDabCktqZ9QAE3SGrWQu7cPHAYTgdYgD1HsDHBsFebnmKZ2xQREHgsGd3m",
+      "action": "dfs_claim",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/d677c547-2b78-4359-adc6-9a082fb183ea"
+    },
+    {
+      "id": "19e47a83-3a21-4294-8dad-a592fb3893c2",
+      "signature": "4ZqK3Fx89WwLUGxtGKrzrpqoge7mCsZ1idZMJhVbr4Y6Djpb3rfyBvuSzw1Z51D2mWLb1naE8tBQvTVu3XgZ19qZ",
+      "action": "begin_model",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/19e47a83-3a21-4294-8dad-a592fb3893c2"
+    },
+    {
+      "id": "aca46ab6-b05f-41aa-9a18-fde4e19531d5",
+      "signature": "35mNL2JfsSVbwBaBjt69cbMhXVwXRCYyPMnwUmTj3gRLm6S9y7aozd7uuLxbfxK8NYV9s6dD7MULFaQdCZGxVJTN",
+      "action": "write_model_0",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/aca46ab6-b05f-41aa-9a18-fde4e19531d5"
+    },
+    {
+      "id": "991c3063-7511-4f0f-b73d-60b429577610",
+      "signature": "46v33BeTdyZGX5kfKj9LbMB6xC3DYg1gdkNiTRht6F23CyRoSJh6LWo2DynQmgxZbSykcsvZHAQ2zmyv4Ye27yWu",
+      "action": "seal_model",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/991c3063-7511-4f0f-b73d-60b429577610"
+    },
+    {
+      "id": "e7a31b32-9926-480d-acda-b710224ff4e8",
+      "signature": "3PnjBaRi43pwp1yqrF34zEdqgqrqouL6mcE18u9PcsogPanRPL2dPYca2Ry1tyuuG82zWoVVafYEziEbbMgqRski",
+      "action": "unwrap_sol",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e7a31b32-9926-480d-acda-b710224ff4e8"
+    },
+    {
+      "id": "ee958f94-cd62-4e15-868b-62a79207ede1",
+      "signature": "4xQG519tGT3h9nU9K2Lst5wixSz9V16YQX3un7uX58az4P5v99VX5eSEAxKYdMFzv5Cvhkt9k6cp2eqfRGfCeyFA",
+      "action": "wrap_sol",
+      "wallet": "EwA1yhgafvrWHbksqjtPCCj5c4bRC5nKnzaECTZRYyVF",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/ee958f94-cd62-4e15-868b-62a79207ede1"
+    },
+    {
+      "id": "fe64f41e-179e-4b07-bfd5-95ef48b2e39e",
+      "signature": "4Az8q45bmzNuAiNqK2BjK4LD75c1FmWNpuaYnH94pgaPFccAR8dZP5Z4QqfDSC54wvnuu9r5gz44DQZrGkhEYLsZ",
+      "action": "swap",
+      "protocol": "damm_v2",
+      "wallet": "EwA1yhgafvrWHbksqjtPCCj5c4bRC5nKnzaECTZRYyVF",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/fe64f41e-179e-4b07-bfd5-95ef48b2e39e"
+    },
+    {
+      "id": "1e8cc78d-9dbb-4f24-b57d-dbf3fbac9321",
+      "signature": "5yJcEtDpGzcVaVGaJVpfQ5Dc5wHjMdgyG9rNwvA2JZvUaT3qWewrNipnJhXuasxjf1wVcy5CC9jDcaoQrpdLGG3w",
+      "action": "swap",
+      "protocol": "damm_v2",
+      "wallet": "EwA1yhgafvrWHbksqjtPCCj5c4bRC5nKnzaECTZRYyVF",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/1e8cc78d-9dbb-4f24-b57d-dbf3fbac9321"
+    },
+    {
+      "id": "e8025a55-e09d-44a5-b801-7461f55a2805",
+      "signature": "Zo59QzQBuCLHAvgr4mM31cjA6w5NKPL8XD4xYHjByz98WFsNTGstrC45bNKpJa4zay7aYHddrSGRaorpCYdzcFe",
+      "action": "reserve_redeem",
+      "wallet": "EwA1yhgafvrWHbksqjtPCCj5c4bRC5nKnzaECTZRYyVF",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/e8025a55-e09d-44a5-b801-7461f55a2805"
+    },
+    {
+      "id": "17a548d7-befb-4bc6-9395-951dbd28848f",
+      "signature": "37jr7HjGM6gEfvc8zcuGNWtGjieHhjArguywixUNGmgJFT8bQcfz1KxVqkzhTg2jFtxi6f5MgCXrX5eHg4ZJfWSE",
+      "action": "unwrap_sol",
+      "wallet": "EwA1yhgafvrWHbksqjtPCCj5c4bRC5nKnzaECTZRYyVF",
+      "state": "finalized",
+      "observed_in": "/api/v1/transactions/17a548d7-befb-4bc6-9395-951dbd28848f"
+    },
+    {
+      "id": "13843560-01a0-4355-a7dd-e655d2558cef",
+      "signature": "28qxDTAxtmwKXNhd6kgLUupddZCGLVsLmqjffgkj56fvixRSXWrU3NFCp8pqnm2xo43Syne1uRiD6cEbKyTPSFVo",
+      "action": "native_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/89b9445d-67e8-4812-a6f7-46edd22b0112"
+    },
+    {
+      "id": "10d3c8ba-e2d9-4c1e-8fda-f6031e4ce8cd",
+      "signature": "4jM5N9cNpRtQPgoTgswAbBU1N3cPYnGACnGqiSuFyFza6fCGg6ao4aaT4CNdSGXuSaxKfyqvDz8KoVZxQr1MXwtz",
+      "action": "verify_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/89b9445d-67e8-4812-a6f7-46edd22b0112"
+    },
+    {
+      "id": "0c248918-3832-44f4-ad30-ed8db174eb26",
+      "signature": "4QzSayuES8zAnC8i92CDECb1uGq3JNADNxLpojyCk17sau2aFNLBxEyYfnJ2Pv7E3uQdQhEm5CFKvFshUVUnrjZF",
+      "action": "native_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/77919dff-58a3-4f9c-b8b0-1bef0283c89a"
+    },
+    {
+      "id": "2bf688bf-642b-4f47-9bb3-08f3ad6306f9",
+      "signature": "RHzcwoUT5185BVh9QcDTKdX6TRhGGKXNfQAFGv91h1oS1qmUbn9pK36rgZdLZHtJJJuAmAfMo3TTRdjevFfBfhw",
+      "action": "verify_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/77919dff-58a3-4f9c-b8b0-1bef0283c89a"
+    },
+    {
+      "id": "3cfba59f-b2e9-4418-9992-a231ab926126",
+      "signature": "5TPbnpVo1s79jTnA1q8HEnNbaAUD9c72XQtVvBav2scnrZBqKQEQEDEgT8TV9AifNRnv5LyR2Nc5EqH2yqxnahJu",
+      "action": "verify_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/67e18584-3761-4b36-8262-0bb9cf0fe9e0"
+    },
+    {
+      "id": "07221dae-cd68-4eb8-9ce4-4a818166a4bb",
+      "signature": "Z2Tqk2AASZ5yaSProviJFiPCNKCw5K3YTqy2SAY27oChK4z5XG912W9PdnQgzM7qb4XBxkHVVbMFAFjtmiF3jDY",
+      "action": "native_migration",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/67e18584-3761-4b36-8262-0bb9cf0fe9e0"
+    },
+    {
+      "id": "d1036464-5bfe-4158-8e6d-ced684908657",
+      "signature": "mREZgctv7mLcNquwxw1Az3pe8AsbD4SFtodAb6HCdjSMjqaYTCnBiUEsKET7Ftfff5An3H5QTw1wPEikke9ZZRr",
+      "action": "fund_and_activate",
+      "wallet": "HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6",
+      "state": "finalized",
+      "observed_in": "/api/v1/factory/launches/67e18584-3761-4b36-8262-0bb9cf0fe9e0"
+    }
+  ],
+  "launches": {
+    "meme": {
+      "name": "UI meme 4045890",
+      "symbol": "UME5890",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/89b9445d-67e8-4812-a6f7-46edd22b0112",
+      "token": "/tokens/AthaMmJA9VM4wtC2cJDhMdJXVuGP63PQYJ7iWXaUJG68",
+      "graduated": true
+    },
+    "backed": {
+      "name": "UI backed 4253166",
+      "symbol": "UBA3166",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/77919dff-58a3-4f9c-b8b0-1bef0283c89a",
+      "token": "/tokens/dLLBUg1AcdrjXkdV1mDnXQGg48KCQmkXjy1eLLKt38J",
+      "graduated": true,
+      "redeemed": true
+    },
+    "funding": {
+      "name": "UI funding 4412236",
+      "symbol": "UFU2236",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/67e18584-3761-4b36-8262-0bb9cf0fe9e0",
+      "token": "/tokens/HC29Bxm9uvaZNu2SgGZPMCi9wf3Ez9LoJLfrm5kjwhhB",
+      "graduated": true,
+      "refunded": true
+    },
+    "funding_completed": {
+      "name": "UI funding_completed 4867440",
+      "symbol": "UFU7440",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/762b3772-2144-44d5-9630-cba90a7f1388",
+      "token": "/tokens/NJxZzmaa26NxQCTFV4JHtVGaGFKsc7WxPAGJYTNdS11",
+      "graduated": true
+    },
+    "funding_expired": {
+      "name": "UI funding_expired 5070726",
+      "symbol": "UFU0726",
+      "workflow": "https://depthguard.rbexp.com/creator/launches/dbf4edc4-1f0e-4b9f-aa3d-bf160536f67c",
+      "token": "/tokens/6y9SDkfHGuBLYxbT4HxkoqHv1CDBa6f4pZR5rGyX2sFk",
+      "graduated": true
+    }
+  },
+  "coverage": [
+    {
+      "feature": "Wallet authentication",
+      "status": "passed"
+    },
+    {
+      "feature": "SOL wrapping",
+      "status": "passed"
+    },
+    {
+      "feature": "Core DBC/DAMM lifecycles",
+      "status": "passed"
+    },
+    {
+      "feature": "Reserve donation and redemption",
+      "status": "passed"
+    },
+    {
+      "feature": "Milestone approval and rejection",
+      "status": "passed"
+    },
+    {
+      "feature": "Funding refund",
+      "status": "passed"
+    },
+    {
+      "feature": "Fully approved funding",
+      "status": "passed"
+    },
+    {
+      "feature": "Expired milestone and refund",
+      "status": "passed"
+    },
+    {
+      "feature": "Fee sweeps and claims",
+      "status": "passed"
+    },
+    {
+      "feature": "Studio publication, registration, fork, import/export",
+      "status": "passed"
+    },
+    {
+      "feature": "Cross-wallet author preservation",
+      "status": "passed"
+    },
+    {
+      "feature": "Simulation Lab and research export",
+      "status": "passed"
+    },
+    {
+      "feature": "Search, pagination, receipts and mobile",
+      "status": "passed"
+    },
+    {
+      "feature": "Landing and documentation interactions",
+      "status": "passed"
+    },
+    {
+      "feature": "SOL unwrapping and reconnect",
+      "status": "passed"
+    },
+    {
+      "feature": "Validation and unauthorized reviewer guards",
+      "status": "passed"
+    },
+    {
+      "feature": "Unsupported asset adapter guard",
+      "status": "passed"
+    },
+    {
+      "feature": "Unfunded real wallet rejection",
+      "status": "passed"
+    },
+    {
+      "feature": "Wallet transaction rejection",
+      "status": "passed"
+    },
+    {
+      "feature": "Research cancellation",
+      "status": "passed"
+    },
+    {
+      "feature": "Research cancellation completion race",
+      "status": "passed"
+    },
+    {
+      "feature": "Portfolio mint clipboard",
+      "status": "passed"
+    },
+    {
+      "feature": "Creator draft navigation",
+      "status": "passed"
+    },
+    {
+      "feature": "All mobile routes",
+      "status": "passed"
+    },
+    {
+      "feature": "Independent holder trading and redemption",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "http_errors": [
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/quotes",
+      "status": 422,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/quotes",
+      "status": 422,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/quotes",
+      "status": 422,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/quotes",
+      "status": 422,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/fee-vaults/D3UyQcjrxMxARvddv4y6xxy39DFkKh15WBnTA7tct9Rp/claims/prepare",
+      "status": 422,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/native/validate",
+      "status": 422,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/simulations/5c395595-c12a-4cc5-90c9-c959cba456bb/cancel",
+      "status": 404,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/swaps/prepare",
+      "status": 422,
+      "method": "POST"
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/simulations/f179e82e-2a55-41a3-a47a-63df5ae838bd/cancel",
+      "status": 404,
+      "method": "POST"
+    }
+  ],
+  "e2e_accepted": true,
+  "resolved_failures": [
+    {
+      "message": "expect(locator).toContainText(expected) failed\n\nLocator: locator('details').filter({ has: getByText('Research results', { exact: true }) }).locator('pre')\n- Expected string  -     1\n+ Received string  + 23077\n\n- \"cancel_requested\": true\n+ {\n+   \"artifact\": {\n+     \"job_id\": \"5c395595-c12a-4cc5-90c9-c959cba456bb\",\n+     \"request\": {\n+       \"cases\": [\n+         {\n+           \"economy\": {\n+             \"base_decimals\": 6,\n+             \"compounding_fee_bps\": 0,\n+             \"curve\": [\n+               {\n+                 \"liquidity\": \"3478353346632948762000322261100\",\n+                 \"sqrt_price\": \"13043817825332782\"\n+               },\n+               {\n+                 \"liquidity\": \"3436032153191461946843925\",\n+                 \"sqrt_price\": \"79226673521066979257578248091\"\n+               }\n+             ],\n+             \"fee_policy\": {\n+               \"author\": \"HpAsuZDNkcYRbsqVygi8tbYoV32UDUH5mYnVCN7PNoL6\",\n+               \"author_bps\": 1000,\n+               \"launcher_bps\": 8000,\n+               \"platform_bps\": 1000\n+             },\n+             \"mechanism\": \"meme\",\n+             \"migration_fee_pct\": 0,\n+             \"migration_quote_threshold\": \"100000000\",\n+             \"native_config\": null,\n+             \"quote_decimals\": 9,\n+             \"schema_version\": 2,\n+             \"sqrt_start_price\": \"3260959874735776\",\n+             \"supply\": \"1000000000000000\",\n+             \"trade_fee_bps\": 25\n+           },\n+           \"inputs\": {},\n+           \"orders\": [\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\": \"buy\",\n+               \"exact_out\": true\n+             },\n+             {\n+               \"amount\": \"1000000000\",\n+               \"direction\"",
+      "at": "2026-10-06T08:53:40.122Z",
+      "url": "https://depthguard.rbexp.com/studio"
+    }
+  ],
+  "not_exercised": [
+    "Phantom/Solflare extension prompts and hardware wallets",
+    "Browser extension rejection prompts (adapter rejection tested)",
+    "Worker interruption recovery",
+    "Mainnet, asset-quote execution, historical market parity, sustained load and external security certification",
+    "External metadata hosting and artwork validation"
+  ],
+  "production_certified": false,
+  "completed_at": "2026-10-06T09:12:51.637Z",
+  "verification": {
+    "method": "Independent getSignatureStatuses with searchTransactionHistory enabled",
+    "commitment": "finalized",
+    "genesis_hash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+    "transaction_count": 97,
+    "transaction_errors": 0,
+    "verified_at": "2026-10-06T09:12:51.637Z"
+  }
+}

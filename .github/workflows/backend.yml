@@ -1,0 +1,149 @@
+name: Backend verification
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: backend-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  rust:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    services:
+      postgres:
+        image: postgres:17.9-bookworm
+        env:
+          POSTGRES_DB: depthguard
+          POSTGRES_USER: depthguard
+          POSTGRES_PASSWORD: ci-only-password
+        ports: [5432:5432]
+        options: >-
+          --health-cmd "pg_isready -U depthguard -d depthguard"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      DATABASE_URL: postgres://depthguard:ci-only-password@127.0.0.1:5432/depthguard
+      PGHOST: 127.0.0.1
+      PGPORT: 5432
+      PGUSER: depthguard
+      PGPASSWORD: ci-only-password
+      PGDATABASE: depthguard
+      APP_DB_PASSWORD: "1111111111111111111111111111111111111111111111111111111111111111"
+      NATIVE_HELPER_PATH: ${{ github.workspace }}/backend/native/target/debug/depthguard-native
+      SBF_FIXTURES_DIR: ${{ github.workspace }}/proof/fixtures
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.1
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            backend
+            backend/native
+            backend/sbf
+      - run: cargo fmt --manifest-path backend/Cargo.toml --all --check
+      - run: cargo fmt --manifest-path backend/native/Cargo.toml --check
+      - run: cargo fmt --manifest-path backend/sbf/Cargo.toml --check
+      - run: cargo clippy --manifest-path backend/Cargo.toml --locked --all-targets -- -D warnings
+      - run: cargo clippy --manifest-path backend/native/Cargo.toml --locked --all-targets -- -D warnings
+      - run: cargo clippy --manifest-path backend/sbf/Cargo.toml --locked --all-targets -- -D warnings
+      - run: backend/ops/postgres-init.sh
+        env:
+          POSTGRES_USER: depthguard
+          POSTGRES_DB: depthguard
+      - run: cargo test --manifest-path backend/Cargo.toml --locked
+      - run: cargo test --manifest-path backend/native/Cargo.toml --locked
+      - run: cargo build --manifest-path backend/Cargo.toml --locked -p depthguard-api -p depthguard-worker
+      - run: cargo build --manifest-path backend/native/Cargo.toml --locked
+      - run: cargo build --manifest-path backend/sbf/Cargo.toml --locked
+      - run: python3 backend/scripts/fetch-fixtures.py
+      - run: python3 backend/scripts/verify-parity.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: node -r ts-node/register backend/scripts/native-fee-proof.cjs
+      - run: node -r ts-node/register backend/scripts/http-lifecycle.cjs
+      - run: cargo run --manifest-path backend/Cargo.toml --locked -p depthguard-api -- contract > backend/openapi.json
+      - run: npx openapi-typescript backend/openapi.json -o web/src/generated/backend-api.ts
+      - run: git diff --exit-code -- backend/openapi.json web/src/generated/backend-api.ts
+      - run: npm run check && npm test
+  audit:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.1
+      - run: cargo install cargo-audit --locked
+      - run: cargo audit --file backend/Cargo.lock
+      - run: cargo audit --file backend/native/Cargo.lock
+      - run: cargo audit --file backend/sbf/Cargo.lock
+      - run: cargo audit --file contracts/Cargo.lock
+      - run: cargo audit --file contracts/tests/runner/Cargo.lock
+
+  anchor:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    services:
+      postgres:
+        image: postgres:17.9-bookworm
+        env:
+          POSTGRES_DB: depthguard
+          POSTGRES_USER: depthguard
+          POSTGRES_PASSWORD: ci-only-password
+        ports: [5432:5432]
+        options: >-
+          --health-cmd "pg_isready -U depthguard -d depthguard"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      DATABASE_URL: postgres://depthguard:ci-only-password@127.0.0.1:5432/depthguard
+      PGHOST: 127.0.0.1
+      PGPORT: 5432
+      PGUSER: depthguard
+      PGPASSWORD: ci-only-password
+      PGDATABASE: depthguard
+      APP_DB_PASSWORD: "1111111111111111111111111111111111111111111111111111111111111111"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.1
+          components: rustfmt, clippy
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            contracts
+            backend
+            backend/native
+            backend/sbf
+      - run: cargo install anchor-cli --version 1.0.2 --locked
+      - run: contracts/scripts/install-agave.sh
+      - run: python3 backend/scripts/fetch-fixtures.py
+      - run: backend/ops/postgres-init.sh
+        env:
+          POSTGRES_USER: depthguard
+          POSTGRES_DB: depthguard
+      - run: cargo fmt --manifest-path contracts/Cargo.toml --all --check
+      - run: cargo fmt --manifest-path contracts/tests/runner/Cargo.toml --check
+      - run: cargo clippy --manifest-path contracts/Cargo.toml --all-targets --locked -- -D warnings
+      - run: contracts/scripts/build.sh
+      - run: git diff --exit-code -- contracts/idl
+      - run: contracts/scripts/test.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: anchor-local-evidence
+          path: |
+            contracts/build-manifest.json
+            contracts/tests/evidence/lifecycle.json
+            contracts/target/deploy/*.so

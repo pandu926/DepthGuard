@@ -1,0 +1,21 @@
+[toolchain]
+anchor_version = "1.0.2"
+solana_version = "4.0.0"
+[features]
+resolution = true
+skip-lint = false
+[programs.localnet]
+depthguard_registry = "5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz"
+depthguard_escrow = "8zEaBFNNVDx9U4Cr111xfZjUmX7JMBapJhd6yT4XwtuZ"
+depthguard_reserve = "7kaGXYpxPuCoh5o2AhxRoU8F13UUkHjfxVZUTYsKG88Y"
+[programs.devnet]
+depthguard_registry = "5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz"
+depthguard_escrow = "8zEaBFNNVDx9U4Cr111xfZjUmX7JMBapJhd6yT4XwtuZ"
+depthguard_reserve = "7kaGXYpxPuCoh5o2AhxRoU8F13UUkHjfxVZUTYsKG88Y"
+[provider]
+cluster = "http://127.0.0.1:18999"
+wallet = "../.local/contracts/operator-keypair.json"
+[test.validator]
+bind_address = "127.0.0.1"
+rpc_port = 18999
+ledger = "../.local/contracts/ledger"

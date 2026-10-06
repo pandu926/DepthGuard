@@ -1,0 +1,1269 @@
+{
+  "address": "5sUGNQ5pymevqfVmg99rgQ2jM4aVSo6RqhJtSK7VrPYz",
+  "metadata": {
+    "name": "depthguard_registry",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "begin_model",
+      "discriminator": [
+        198,
+        107,
+        236,
+        49,
+        148,
+        204,
+        115,
+        255
+      ],
+      "accounts": [
+        {
+          "name": "platform",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  108,
+                  97,
+                  116,
+                  102,
+                  111,
+                  114,
+                  109
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "model",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  109,
+                  111,
+                  100,
+                  101,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "publisher"
+              },
+              {
+                "kind": "arg",
+                "path": "digest"
+              }
+            ]
+          }
+        },
+        {
+          "name": "parent",
+          "optional": true
+        },
+        {
+          "name": "publisher",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "digest",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "json_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "size",
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "create_config",
+      "discriminator": [
+        201,
+        207,
+        243,
+        114,
+        75,
+        111,
+        47,
+        189
+      ],
+      "accounts": [
+        {
+          "name": "platform",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  108,
+                  97,
+                  116,
+                  102,
+                  111,
+                  114,
+                  109
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "model"
+        },
+        {
+          "name": "launch",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  108,
+                  97,
+                  117,
+                  110,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "launch.model",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.launcher",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.nonce",
+                "account": "LaunchInstance"
+              }
+            ]
+          }
+        },
+        {
+          "name": "config",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "fee_vault",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "quote_mint"
+        },
+        {
+          "name": "launcher",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "dbc_program",
+          "address": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN"
+        },
+        {
+          "name": "event_authority"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "create_pool",
+      "discriminator": [
+        233,
+        146,
+        209,
+        142,
+        207,
+        104,
+        64,
+        188
+      ],
+      "accounts": [
+        {
+          "name": "launch",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  108,
+                  97,
+                  117,
+                  110,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "launch.model",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.launcher",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.nonce",
+                "account": "LaunchInstance"
+              }
+            ]
+          }
+        },
+        {
+          "name": "config",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "pool_authority"
+        },
+        {
+          "name": "base_mint",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "quote_mint",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "pool",
+          "writable": true
+        },
+        {
+          "name": "base_vault",
+          "writable": true
+        },
+        {
+          "name": "quote_vault",
+          "writable": true
+        },
+        {
+          "name": "mint_metadata",
+          "writable": true
+        },
+        {
+          "name": "metadata_program"
+        },
+        {
+          "name": "launcher",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "dbc_program",
+          "address": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "event_authority"
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "symbol",
+          "type": "string"
+        },
+        {
+          "name": "uri",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "fund_and_activate",
+      "discriminator": [
+        125,
+        107,
+        55,
+        150,
+        241,
+        111,
+        245,
+        132
+      ],
+      "accounts": [
+        {
+          "name": "launch",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  108,
+                  97,
+                  117,
+                  110,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "launch.model",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.launcher",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.nonce",
+                "account": "LaunchInstance"
+              }
+            ]
+          }
+        },
+        {
+          "name": "config",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "pool",
+          "writable": true
+        },
+        {
+          "name": "module_vault",
+          "writable": true
+        },
+        {
+          "name": "token_vault",
+          "writable": true
+        },
+        {
+          "name": "module_program"
+        },
+        {
+          "name": "quote_mint",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "quote_vault",
+          "writable": true
+        },
+        {
+          "name": "pool_authority"
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "dbc_program",
+          "address": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN"
+        },
+        {
+          "name": "event_authority"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "initialize_launch",
+      "discriminator": [
+        90,
+        201,
+        220,
+        142,
+        112,
+        253,
+        100,
+        13
+      ],
+      "accounts": [
+        {
+          "name": "platform",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  108,
+                  97,
+                  116,
+                  102,
+                  111,
+                  114,
+                  109
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "model"
+        },
+        {
+          "name": "launch",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  108,
+                  97,
+                  117,
+                  110,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "model"
+              },
+              {
+                "kind": "account",
+                "path": "launcher"
+              },
+              {
+                "kind": "arg",
+                "path": "nonce"
+              }
+            ]
+          }
+        },
+        {
+          "name": "launcher",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "nonce",
+          "type": "u64"
+        },
+        {
+          "name": "config",
+          "type": "pubkey"
+        },
+        {
+          "name": "base_mint",
+          "type": "pubkey"
+        },
+        {
+          "name": "fee_vault",
+          "type": "pubkey"
+        },
+        {
+          "name": "first_position_mint",
+          "type": "pubkey"
+        },
+        {
+          "name": "reviewers",
+          "type": {
+            "vec": "pubkey"
+          }
+        }
+      ]
+    },
+    {
+      "name": "initialize_module",
+      "discriminator": [
+        237,
+        8,
+        2,
+        139,
+        239,
+        178,
+        75,
+        161
+      ],
+      "accounts": [
+        {
+          "name": "launch",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  108,
+                  97,
+                  117,
+                  110,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "launch.model",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.launcher",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.nonce",
+                "account": "LaunchInstance"
+              }
+            ]
+          }
+        },
+        {
+          "name": "model",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "base_mint",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "quote_mint",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "module_vault",
+          "writable": true
+        },
+        {
+          "name": "token_vault",
+          "writable": true
+        },
+        {
+          "name": "module_program"
+        },
+        {
+          "name": "launcher",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "associated_token_program",
+          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "initialize_platform",
+      "discriminator": [
+        119,
+        201,
+        101,
+        45,
+        75,
+        122,
+        89,
+        3
+      ],
+      "accounts": [
+        {
+          "name": "platform",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  108,
+                  97,
+                  116,
+                  102,
+                  111,
+                  114,
+                  109
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "program_data",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  72,
+                  92,
+                  157,
+                  228,
+                  198,
+                  194,
+                  231,
+                  192,
+                  14,
+                  48,
+                  28,
+                  231,
+                  237,
+                  180,
+                  49,
+                  110,
+                  150,
+                  203,
+                  221,
+                  150,
+                  23,
+                  201,
+                  202,
+                  224,
+                  251,
+                  179,
+                  86,
+                  100,
+                  242,
+                  17,
+                  125,
+                  127
+                ]
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                2,
+                168,
+                246,
+                145,
+                78,
+                136,
+                161,
+                176,
+                226,
+                16,
+                21,
+                62,
+                247,
+                99,
+                174,
+                43,
+                0,
+                194,
+                185,
+                61,
+                22,
+                193,
+                36,
+                210,
+                192,
+                83,
+                122,
+                16,
+                4,
+                128,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "recipient",
+          "type": "pubkey"
+        },
+        {
+          "name": "damm_config",
+          "type": "pubkey"
+        }
+      ]
+    },
+    {
+      "name": "pause_new_launches",
+      "discriminator": [
+        50,
+        109,
+        154,
+        88,
+        216,
+        108,
+        18,
+        109
+      ],
+      "accounts": [
+        {
+          "name": "platform",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  108,
+                  97,
+                  116,
+                  102,
+                  111,
+                  114,
+                  109
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "authority",
+          "signer": true,
+          "relations": [
+            "platform"
+          ]
+        }
+      ],
+      "args": [
+        {
+          "name": "paused",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "seal_model",
+      "discriminator": [
+        130,
+        170,
+        138,
+        45,
+        104,
+        73,
+        50,
+        8
+      ],
+      "accounts": [
+        {
+          "name": "model",
+          "writable": true
+        },
+        {
+          "name": "publisher",
+          "signer": true,
+          "relations": [
+            "model"
+          ]
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "verify_migration",
+      "discriminator": [
+        40,
+        89,
+        31,
+        78,
+        82,
+        54,
+        207,
+        62
+      ],
+      "accounts": [
+        {
+          "name": "launch",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  108,
+                  97,
+                  117,
+                  110,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "launch.model",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.launcher",
+                "account": "LaunchInstance"
+              },
+              {
+                "kind": "account",
+                "path": "launch.nonce",
+                "account": "LaunchInstance"
+              }
+            ]
+          }
+        },
+        {
+          "name": "base_mint",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "config",
+          "relations": [
+            "launch"
+          ]
+        },
+        {
+          "name": "pool"
+        },
+        {
+          "name": "damm_pool"
+        },
+        {
+          "name": "position"
+        },
+        {
+          "name": "position_nft"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "write_model",
+      "discriminator": [
+        203,
+        54,
+        213,
+        92,
+        6,
+        162,
+        121,
+        219
+      ],
+      "accounts": [
+        {
+          "name": "model",
+          "writable": true
+        },
+        {
+          "name": "publisher",
+          "signer": true,
+          "relations": [
+            "model"
+          ]
+        }
+      ],
+      "args": [
+        {
+          "name": "offset",
+          "type": "u32"
+        },
+        {
+          "name": "bytes",
+          "type": "bytes"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "LaunchInstance",
+      "discriminator": [
+        97,
+        120,
+        120,
+        196,
+        201,
+        130,
+        58,
+        38
+      ]
+    },
+    {
+      "name": "ModelVersion",
+      "discriminator": [
+        22,
+        236,
+        9,
+        80,
+        24,
+        101,
+        127,
+        43
+      ]
+    },
+    {
+      "name": "Platform",
+      "discriminator": [
+        77,
+        92,
+        204,
+        58,
+        187,
+        98,
+        91,
+        12
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "LaunchTransition",
+      "discriminator": [
+        105,
+        204,
+        79,
+        250,
+        47,
+        245,
+        137,
+        224
+      ]
+    },
+    {
+      "name": "ModelPublished",
+      "discriminator": [
+        55,
+        100,
+        14,
+        140,
+        117,
+        242,
+        43,
+        186
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "LaunchInstance",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "model",
+            "type": "pubkey"
+          },
+          {
+            "name": "launcher",
+            "type": "pubkey"
+          },
+          {
+            "name": "nonce",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          },
+          {
+            "name": "config",
+            "type": "pubkey"
+          },
+          {
+            "name": "base_mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "quote_mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "fee_vault",
+            "type": "pubkey"
+          },
+          {
+            "name": "first_position_mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "damm_config",
+            "type": "pubkey"
+          },
+          {
+            "name": "damm_pool",
+            "type": "pubkey"
+          },
+          {
+            "name": "reviewers",
+            "type": {
+              "vec": "pubkey"
+            }
+          },
+          {
+            "name": "phase",
+            "type": "u8"
+          },
+          {
+            "name": "module_initialized",
+            "type": "bool"
+          },
+          {
+            "name": "mechanism",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaunchTransition",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "version",
+            "type": "u8"
+          },
+          {
+            "name": "launch",
+            "type": "pubkey"
+          },
+          {
+            "name": "model",
+            "type": "pubkey"
+          },
+          {
+            "name": "previous",
+            "type": "u8"
+          },
+          {
+            "name": "next",
+            "type": "u8"
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ModelPublished",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "version",
+            "type": "u8"
+          },
+          {
+            "name": "model",
+            "type": "pubkey"
+          },
+          {
+            "name": "publisher",
+            "type": "pubkey"
+          },
+          {
+            "name": "author",
+            "type": "pubkey"
+          },
+          {
+            "name": "parent",
+            "type": "pubkey"
+          },
+          {
+            "name": "digest",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "json_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "ModelVersion",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "publisher",
+            "type": "pubkey"
+          },
+          {
+            "name": "author",
+            "type": "pubkey"
+          },
+          {
+            "name": "parent",
+            "type": "pubkey"
+          },
+          {
+            "name": "digest",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "json_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "size",
+            "type": "u32"
+          },
+          {
+            "name": "sealed",
+            "type": "bool"
+          },
+          {
+            "name": "inherited_shares",
+            "type": {
+              "array": [
+                "u16",
+                3
+              ]
+            }
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Platform",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "recipient",
+            "type": "pubkey"
+          },
+          {
+            "name": "damm_config",
+            "type": "pubkey"
+          },
+          {
+            "name": "paused",
+            "type": "bool"
+          }
+        ]
+      }
+    }
+  ]
+}

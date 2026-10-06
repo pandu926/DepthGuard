@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible product or development issue.
+title: "bug: "
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include the route, network, and relevant version. Do not include secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and evidence
+      description: Browser, wallet, operating system, public transaction signature, or sanitized logs.

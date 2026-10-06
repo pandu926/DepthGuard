@@ -1,0 +1,6 @@
+{
+  "repository": "MeteoraAg/dynamic-fee-sharing-sdk",
+  "commit": "ff303b65530281b354e2ce7ceadc6e68bba4cfa8",
+  "path": "tests/fixtures/dynamic_fee_sharing.so",
+  "sha256": "54cb4f771847aa1220bbc82792336f2fa3a68b206d5df80df0c989ad0704b0a8"
+}
